@@ -1,0 +1,231 @@
+/* where do we participate? */
+.comp-details {
+  min-height: 130vh;
+}
+.comp-details .content {
+  grid-column: 2/6;
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+.comp-details .content-header {
+  grid-row: 2/3;
+  align-items: center;
+}
+.comp-details .content-header p {
+  font-size: 2.5rem;
+}
+.comp-details .content-header p b {
+  /* color: red; */
+  font-weight: 800;
+}
+.comp-details .content-body {
+  grid-row: 3/10;
+
+  color: rgba(34, 34, 34, 1);
+  font-size: 1.1rem;
+  line-height: 1.4;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.comp-details .left-side,
+.comp-details .right-side {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+}
+
+.comp-details .card-counter {
+  grid-row: 1/2;
+}
+.comp-details .title-area {
+  /* background-color: antiquewhite; */
+  grid-row: 3/10;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.comp-details .title-line {
+  grid-row: 1/2;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+.comp-details .title-line .vertical-header {
+  grid-row: 1/2;
+
+  align-items: center;
+  font-size: 0.65rem;
+}
+.comp-details .vertical-line {
+  grid-row: 2/4;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.comp-details .card-counter {
+  font-size: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.comp-details .card-counter span {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+/* supra */
+.comp-details .content-body .content-supra {
+  display: grid;
+  grid-template-columns: 1.75fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  line-height: 1.3;
+}
+.comp-details .supra-header {
+  font-weight: 900;
+  grid-column: 1/3;
+  font-size: 2.5rem;
+}
+.comp-details .supra-info {
+  margin-right: 0.5rem;
+}
+.comp-details .supra-point {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  /* border-left: 0.2rem solid red; */
+}
+.comp-details .supra-img,
+.fbharat-img {
+  margin: 0.6rem 0;
+  background-color: black;
+}
+/* fbharat */
+.comp-details .content-body .content-fbharat {
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1.75fr;
+  grid-template-rows: 1fr 4fr;
+  line-height: 1.3;
+}
+.comp-details .fbharat-header {
+  font-weight: 900;
+  grid-column: 1/3;
+  font-size: 2.5rem;
+}
+.comp-details .fbharat-info {
+  padding-top: 1rem;
+  margin-left: 1.5rem;
+  text-align: right;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.comp-details .fbharat-point {
+  padding-right: 1rem;
+  margin-top: 1rem;
+  /* border-right: 0.2rem solid red; */
+}
+.comp-details .empty-area {
+  height: 100%;
+  background-color: white;
+  grid-row: 10/11;
+}
+.comp-details .vertical-line .right-box {
+  border-left: 3px solid black;
+}
+.comp-details .vertical-line .left-box {
+  border-right: 3px solid black;
+}
+/* Responsiveness */
+@media only screen and (max-width: 1000px) {
+  .comp-details {
+    min-height: 100vh;
+  }
+  .comp-details .supra-header,
+  .comp-details .fbharat-header {
+    font-size: 30px;
+  }
+  .acomp-details .card-counter {
+    font-size: 25px;
+  }
+  .comp-details .content-body {
+    font-size: 14px;
+  }
+  .comp-details .content-header p {
+    font-size: 35px;
+  }
+  .comp-details .content {
+    grid-column: 2/7;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    margin-right: 2rem;
+  }
+  .comp-details .content-body {
+    grid-row: 3/12;
+  }
+  .comp-details .left-side {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+  }
+  .comp-details .right-side {
+    display: none;
+  }
+}
+/* Tablets */
+@media only screen and (max-width: 700px) {
+  .comp-details .card-counter {
+    font-size: 20px;
+  }
+  .comp-details .content-body {
+    font-size: 13px;
+  }
+  .comp-details .content-header p {
+    font-size: 27px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 500px) {
+  .comp-details {
+    height: auto;
+  }
+  .comp-details .content-header p {
+    font-size: 27px;
+  }
+  .comp-details .content-body {
+    padding-top: 0;
+  }
+  .comp-details .content-body {
+    font-size: 11px;
+  }
+
+  .comp-details .title-line .vertical-header {
+    font-size: 7px;
+  }
+  .comp-details .content {
+    margin-right: 1rem;
+  }
+  .comp-details .supra-header,
+  .comp-details .fbharat-header {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .comp-details {
+    height: auto;
+  }
+  .comp-details .content-header p {
+    font-size: 22px;
+  }
+  .comp-details .content-body {
+    padding-top: 0;
+  }
+  .comp-details .content-body {
+    font-size: 8px;
+  }
+
+  .comp-details .title-line .vertical-header {
+    font-size: 5px;
+  }
+  .comp-details .content {
+    margin-right: 1rem;
+  }
+  .comp-details .supra-header,
+  .comp-details .fbharat-header {
+    font-size: 15px;
+  }
+}

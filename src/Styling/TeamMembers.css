@@ -1,0 +1,244 @@
+* {
+  /* border: 1px solid white; */
+}
+.team-member {
+  height: auto;
+  background-color: black;
+  color: white;
+}
+.team-member .content {
+  grid-column: 2/6;
+  display: grid;
+
+  grid-template-rows: 8rem 5rem repeat(1, 1fr);
+}
+.team-member .content-header {
+  grid-row: 2/3;
+  align-items: center;
+}
+.team-member .content-header p {
+  font-size: 2.5rem;
+}
+.team-member .content-header p b {
+  color: red;
+  font-weight: 800;
+}
+.team-member .content-body {
+  grid-row: 3/ 4;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr 10rem;
+}
+.team-member .content-body div {
+  /* border: 1px solid white; */
+  display: grid;
+  grid-template-rows: 4fr 0.8fr;
+}
+
+.people {
+  list-style-type: none;
+}
+.people li {
+  display: inline-block;
+}
+.person-img {
+  width: 200px;
+  height: 230px;
+  background-color: white;
+  margin: 0.8rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team-member .person-details {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* border: 1px solid white; */
+}
+.person-name {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.person-desig {
+  font-weight: 300;
+  font-size: 0.7rem;
+  color: rgb(143, 143, 143);
+}
+
+.team-member .left-side,
+.team-member .right-side {
+  display: grid;
+  grid-template-rows: 8rem 5rem repeat(7, 1fr) 10rem;
+}
+.team-member .card-counter {
+  grid-row: 1/2;
+  font-size: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.team-member .card-counter span {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.team-member .title-line {
+  grid-row: 3/10;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+.team-member .title-line .vertical-header {
+  grid-row: 1/2;
+
+  font-size: 0.65rem;
+}
+.team-member .vertical-line {
+  grid-row: 2/8;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.team-member .vertical-line .right-box {
+  border-left: 3px solid white;
+}
+.team-member .vertical-line .left-box {
+  border-right: 3px solid white;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1000px) {
+  /* person */
+  .person-img {
+    width: 150px;
+    height: 180px;
+    margin: 0.7rem;
+  }
+  .person-name {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  .person-desig {
+    font-size: 0.55rem;
+  }
+
+  .team-member .card-counter {
+    font-size: 25px;
+  }
+  .team-member .content-body {
+    font-size: 14px;
+  }
+  .team-member .content-header p {
+    font-size: 35px;
+  }
+  .team-member .content {
+    grid-column: 2/7;
+    margin-right: 1rem;
+  }
+  .team-member .right-side {
+    display: none;
+  }
+}
+/* Tablets */
+@media only screen and (max-width: 700px) {
+  /* person */
+  .person-img {
+    width: 120px;
+    height: 150px;
+    margin: 0.5rem;
+  }
+  .person-name {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+  .person-desig {
+    font-size: 0.55rem;
+  }
+
+  .team-member .content {
+    grid-template-rows: 6rem 4rem repeat(1, 1fr);
+  }
+  .team-member .left-side {
+    display: grid;
+    grid-template-rows: 6rem 4rem repeat(7, 1fr) 10rem;
+  }
+  .team-member .card-counter {
+    font-size: 20px;
+  }
+  .team-member .content-body {
+    font-size: 13px;
+  }
+  .team-member .content-header p {
+    font-size: 27px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 500px) {
+  /* person */
+  .person-img {
+    width: 80px;
+    height: 100px;
+    margin: 0.4rem;
+  }
+  .person-name {
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+  .person-desig {
+    font-size: 0.3rem;
+  }
+
+  .team-member .content {
+    grid-template-rows: 4rem 4rem repeat(1, 1fr);
+  }
+  .team-member .left-side {
+    display: grid;
+    grid-template-rows: 4rem 4rem repeat(7, 1fr) 2rem;
+  }
+  .team-member .card-counter {
+    font-size: 20px;
+  }
+  .team-member .content-body {
+    padding-top: 0;
+    font-size: 11px;
+  }
+  .team-member .content-header p {
+    font-size: 27px;
+  }
+  .team-member .title-line .vertical-header {
+    font-size: 6px;
+  }
+  .team-member .vertical-line .right-box {
+    border-left: 2px solid white;
+  }
+  .team-member .vertical-line .left-box {
+    border-right: 2px solid white;
+  }
+}
+@media only screen and (max-width: 350px) {
+  /* person */
+  .person-img {
+    width: 65px;
+    height: 85px;
+    margin: 0.3rem;
+  }
+  .person-name {
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+  .person-desig {
+    font-size: 0.3rem;
+  }
+  .team-member .card-counter {
+    font-size: 20px;
+  }
+  .team-member .content-body {
+    font-size: 8px;
+  }
+  .team-member .content-header p {
+    font-size: 22px;
+  }
+  .team-member .title-line .vertical-header {
+    font-size: 5px;
+  }
+}

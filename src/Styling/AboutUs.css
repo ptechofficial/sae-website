@@ -1,0 +1,155 @@
+/* CSS for AboutUs */
+.about-us {
+  height: 100vh;
+  /* border: 1px solid black; */
+}
+
+.about-us .content {
+  grid-column: 2/6;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+.about-us .content-header {
+  grid-row: 2/3;
+  align-items: center;
+}
+.about-us .content-header p {
+  font-size: 2.5rem;
+}
+.about-us .content-header p b {
+  /* color: red; */
+  font-weight: 800;
+}
+.about-us .content-body {
+  grid-row: 3/9;
+  padding-top: 1rem;
+  color: rgba(34, 34, 34, 1);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.about-us .content-body b {
+  font-weight: 800;
+  color: rgba(95, 95, 95, 1);
+}
+.about-us .left-side,
+.about-us .right-side {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+.about-us .comp-names {
+  margin-top: 1rem;
+  /* border-left: 0.2rem solid red; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 1rem;
+  font-weight: 800;
+}
+
+.about-us .title-line {
+  grid-row: 3/7;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.about-us .title-line .vertical-header {
+  grid-row: 1/2;
+
+  align-items: center;
+  font-size: 0.65rem;
+}
+.about-us .vertical-line {
+  grid-row: 2/5;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-us .vertical-line .right-box {
+  border-left: 3px solid black;
+}
+.about-us .vertical-line .left-box {
+  border-right: 3px solid black;
+}
+.about-us .card-counter {
+  grid-row: 1/2;
+  font-size: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.about-us .card-counter span {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1000px) {
+  .about-us .card-counter {
+    font-size: 25px;
+  }
+  .about-us .content-body {
+    font-size: 17px;
+  }
+  .about-us .content-header p {
+    font-size: 35px;
+  }
+  .about-us .content {
+    grid-column: 2/7;
+    margin-right: 2rem;
+  }
+  .about-us .right-side {
+    display: none;
+  }
+}
+/* Tablets */
+@media only screen and (max-width: 700px) {
+  .about-us .card-counter {
+    font-size: 20px;
+  }
+  .about-us .content-body {
+    font-size: 13px;
+  }
+  .about-us .content-header p {
+    font-size: 27px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 500px) {
+  .about-us .content-header p {
+    font-size: 27px;
+  }
+  .about-us .content-body {
+    padding-top: 0;
+  }
+  .about-us .content-body {
+    font-size: 12px;
+  }
+
+  .about-us .left-side {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .about-us .vertical-line .right-box {
+    border-left: 2px solid black;
+  }
+  .about-us .vertical-line .left-box {
+    border-right: 2px solid black;
+  }
+  .about-us .title-line .vertical-header {
+    font-size: 7px;
+  }
+  .about-us .content {
+    grid-template-rows: repeat(9, 1fr);
+  }
+}
+@media only screen and (max-width: 350px) {
+  /* .about-us .content-header p {
+    font-size: 22px;
+  } */
+  .about-us .content-body {
+    font-size: 10.5px;
+  }
+  /* .about-us .title-line .vertical-header {
+    font-size: 5px;
+  } */
+}
