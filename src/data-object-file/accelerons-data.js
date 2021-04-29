@@ -68,6 +68,22 @@ const DataAccelerons = {
     img_src:
       'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
   },
+  results: [
+    {
+      year: '2020',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      supra: 'Here will go the results for SUPRA for the year 2020',
+      fbharat: 'Here goes the results for Formula Bharat for the year 2020',
+    },
+    {
+      year: '2019',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      supra: 'Here will go the results for SUPRA for the year 2019',
+      fbharat: 'Here goes the results for Formula Bharat for the year 2019',
+    },
+  ],
 };
 
 export default DataAccelerons;

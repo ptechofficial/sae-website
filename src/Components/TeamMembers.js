@@ -15,6 +15,7 @@ const TeamPerson = ({ personData }) => {
           <span className='person-name center-items'>{personData.name}</span>
           <span className='person-desig center-items'> {personData.desg} </span>
         </span>
+        q
       </div>
     </li>
   );

@@ -93,21 +93,37 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-.results .timeline-data div {
-  /* background-color: antiquewhite; */
-  padding: 0.5rem;
-  margin: 0 1rem;
-  font-weight: 800;
-}
+
 .results .timeline-data .year-img {
   background-color: aquamarine;
+  margin: 0 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .results .timeline-data .year-achv {
+  padding: 0.5rem;
+  margin: 0 1rem;
   border: 1px solid black;
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
+/* .results .timeline-data .year-achv * {
+  border: 1px solid black;
+} */
 
+.results .comp-name {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.results .comp-title {
+  font-weight: 800;
+}
+.results .comp-data {
+  font-weight: 300;
+  font-size: 12.5px;
+}
 /* Responsiveness */
 @media only screen and (max-width: 1000px) {
   .results .card-counter {
@@ -138,13 +154,15 @@
   .results .content-header p {
     font-size: 27px;
   }
+  .results .comp-data {
+    font-weight: 300;
+    font-size: 10.5px;
+  }
 }
 /* mobile */
 @media only screen and (max-width: 500px) {
   .results .content-header p {
     font-size: 27px;
-  }
-  .results .content-body {
   }
 
   .results .left-side {
@@ -169,10 +187,10 @@
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   }
-  .results .timeline-data div {
+  .results .timeline-data .year-achv {
     /* background-color: antiquewhite; */
     padding: 0.1rem;
-    margin: 0.1rem 0;
+    margin: 0 1rem;
     font-weight: 800;
   }
 
@@ -188,6 +206,10 @@
   }
   .arrows {
     font-size: 1rem;
+  }
+  .results .comp-data {
+    font-weight: 100;
+    font-size: 8.5px;
   }
 }
 @media only screen and (max-width: 350px) {

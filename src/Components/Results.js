@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Styling/Results.css';
+import HorzScroll from './HorzScroll/HorzScroll';
 
 const Results = ({ accelerons }) => {
+  const [resultData, setResultData] = useState(accelerons.results[0]);
+  console.log(resultData);
   return (
     <div className='one-card results'>
       <div className='left-side'>
@@ -38,7 +41,7 @@ const Results = ({ accelerons }) => {
         <div className='content-body'>
           <div className='timeline-years center-items'>
             <span className='center-items arrows'>{'<'}</span>
-            <span className='center-items year'>
+            {/* <span className='center-items year'>
               <a>2020</a>{' '}
             </span>
             <span className='center-items year'>
@@ -59,13 +62,33 @@ const Results = ({ accelerons }) => {
             <span className='center-items'>
               <a>2014</a>{' '}
             </span>
-            <span className='center-items arrows'>{'>'}</span>
+            <span className='center-items arrows'>{'>'}</span> */}
+            <HorzScroll />
           </div>
           <div className='timeline-data'>
-            <div className='year-img'>Year Image</div>
+            <div
+              className='year-img'
+              style={{ backgroundImage: `url(${resultData.img_src})` }}
+            ></div>
             <div className='year-achv'>
-              <div style={{ textDecoration: 'underline' }}>SUPRA</div>
-              <div style={{ textDecoration: 'underline' }}>FORMULA BHARAT</div>
+              <div className='comp-name'>
+                <div
+                  className='comp-title'
+                  style={{ textDecoration: 'underline' }}
+                >
+                  SUPRA
+                </div>
+                <div className='comp-data'>{resultData.supra}</div>
+              </div>
+              <div className='comp-name'>
+                <div
+                  className='comp-title'
+                  style={{ textDecoration: 'underline' }}
+                >
+                  Formula Bharat
+                </div>
+                <div className='comp-data'>{resultData.fbharat}</div>
+              </div>
             </div>
           </div>
         </div>
