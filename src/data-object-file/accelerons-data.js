@@ -1,6 +1,8 @@
 const DataAccelerons = {
   name: 'ACCELERONS',
   accentColor: 'red',
+  FooterBgColor: 'white',
+  textColor: 'black',
   aboutUs: {
     name: 'aboutus',
     contentBody: (

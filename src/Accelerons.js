@@ -6,6 +6,7 @@ import AboutUs from './Components/AboutUs';
 import Participation from './Components/Participation';
 import TeamMembers from './Components/TeamMembers';
 import Results from './Components/Results';
+import Footer from './Components/Footer';
 
 const Accelerons = () => {
   return (
@@ -14,6 +15,11 @@ const Accelerons = () => {
       <Participation accelerons={DataAccelerons} />
       <TeamMembers accelerons={DataAccelerons} />
       <Results accelerons={DataAccelerons} />
+      <Footer
+        accentColor={DataAccelerons.accentColor}
+        bgColor={DataAccelerons.FooterBgColor}
+        textColor={DataAccelerons.textColor}
+      />
     </>
   );
 };
