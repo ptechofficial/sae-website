@@ -83,6 +83,41 @@ const DataAccelerons = {
       supra: 'Here will go the results for SUPRA for the year 2019',
       fbharat: 'Here goes the results for Formula Bharat for the year 2019',
     },
+    {
+      year: '2018',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      supra: 'Here will go the results for SUPRA for the year 2018',
+      fbharat: 'Here goes the results for Formula Bharat for the year 2018',
+    },
+    {
+      year: '2017',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      supra: 'Here will go the results for SUPRA for the year 2017',
+      fbharat: 'Here goes the results for Formula Bharat for the year 2017',
+    },
+    {
+      year: '2016',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      supra: 'Here will go the results for SUPRA for the year 2016',
+      fbharat: 'Here goes the results for Formula Bharat for the year 2016',
+    },
+    {
+      year: '2015',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      supra: 'Here will go the results for SUPRA for the year 2015',
+      fbharat: 'Here goes the results for Formula Bharat for the year 2015',
+    },
+    {
+      year: '2014',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PushkarVishwakarma.jpg',
+      supra: 'Here will go the results for SUPRA for the year 2014',
+      fbharat: 'Here goes the results for Formula Bharat for the year 2014',
+    },
   ],
 };
 

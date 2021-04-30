@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import '../Styling/Results.css';
-import HorzScroll from './HorzScroll/HorzScroll';
 
 const Results = ({ accelerons }) => {
   const [resultData, setResultData] = useState(accelerons.results[0]);
   console.log(resultData);
+  const results = accelerons.results;
   return (
     <div className='one-card results'>
       <div className='left-side'>
@@ -34,13 +34,13 @@ const Results = ({ accelerons }) => {
         <div className='content-header'>
           <span>
             <p>
-              our <b>LEGACY</b>
+              our <b style={{ color: accelerons.accentColor }}>LEGACY</b>
             </p>
           </span>
         </div>
         <div className='content-body'>
           <div className='timeline-years center-items'>
-            <span className='center-items arrows'>{'<'}</span>
+            {/* <span className='center-items arrows'>{'<'}</span> */}
             {/* <span className='center-items year'>
               <a>2020</a>{' '}
             </span>
@@ -61,9 +61,23 @@ const Results = ({ accelerons }) => {
             </span>
             <span className='center-items'>
               <a>2014</a>{' '}
-            </span>
-            <span className='center-items arrows'>{'>'}</span> */}
-            <HorzScroll />
+            </span> */}
+            {results.map((result, index) => {
+              if (index < 7) {
+                return (
+                  <span className='center-items year'>
+                    <a
+                      onClick={() => {
+                        setResultData(results[index]);
+                      }}
+                    >
+                      {result.year}
+                    </a>
+                  </span>
+                );
+              }
+            })}
+            {/* <span className='center-items arrows'>{'>'}</span> */}
           </div>
           <div className='timeline-data'>
             <div
@@ -76,7 +90,7 @@ const Results = ({ accelerons }) => {
                   className='comp-title'
                   style={{ textDecoration: 'underline' }}
                 >
-                  SUPRA
+                  {accelerons.participate.firstName}
                 </div>
                 <div className='comp-data'>{resultData.supra}</div>
               </div>
@@ -85,7 +99,7 @@ const Results = ({ accelerons }) => {
                   className='comp-title'
                   style={{ textDecoration: 'underline' }}
                 >
-                  Formula Bharat
+                  {accelerons.participate.secondName}
                 </div>
                 <div className='comp-data'>{resultData.fbharat}</div>
               </div>
