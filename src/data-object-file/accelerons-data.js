@@ -1,7 +1,7 @@
 const DataAccelerons = {
   name: 'ACCELERONS',
   accentColor: 'red',
-  FooterBgColor: 'white',
+
   textColor: 'black',
   aboutUs: {
     name: 'aboutus',
@@ -121,6 +121,13 @@ const DataAccelerons = {
       fbharat: 'Here goes the results for Formula Bharat for the year 2014',
     },
   ],
+  footerColors: {
+    bgColor: 'white',
+    textColor: 'black',
+    iconColor: 'rgb(54, 54, 54)',
+    inpBgColor: '#CECECE',
+    chkBoxColor: 'rgb(128,128,128)',
+  },
 };
 
 export default DataAccelerons;

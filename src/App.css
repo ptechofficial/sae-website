@@ -5,10 +5,12 @@
   margin: 0;
   /* border: 1px black solid; */
 }
+
 html,
 body {
   /* height: 100vh; */
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 .one-card {
   width: 100%;

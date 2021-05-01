@@ -17,8 +17,7 @@ const Accelerons = () => {
       <Results accelerons={DataAccelerons} />
       <Footer
         accentColor={DataAccelerons.accentColor}
-        bgColor={DataAccelerons.FooterBgColor}
-        textColor={DataAccelerons.textColor}
+        footerColors={DataAccelerons.footerColors}
       />
     </>
   );

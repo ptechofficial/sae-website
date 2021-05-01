@@ -1,39 +1,28 @@
 .footerArea {
   border: 1px solid black;
   height: 40vh;
-  /* border: 1px solid black; */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 .foot-section {
-  /* border: 1px solid black; */
   display: grid;
   grid-template-rows: 1fr 1.35fr;
   padding: 80px 0px 80px 30px;
 }
 .foot-section .heading {
   font-size: 24px;
-  /* border: 1px solid black; */
   font-weight: 600;
-  /* padding: 30px; */
-  /* position: relative; */
 }
 .foot-section .heading span {
-  /* position: absolute; */
-  /* bottom: 30px; */
-  border-bottom: 4px solid red;
+  border-bottom: 4px solid;
 }
 
 .foot-section .footer-links {
-  /* border: 1px solid black; */
-
   font-size: 10px;
   font-weight: 500;
-  /* color: grey; */
 }
 .custom-icon-sizing {
   font-size: 20px;
-  color: rgb(54, 54, 54);
 }
 
 .explore-us {
@@ -86,21 +75,17 @@
 
 .news-letter-inp input {
   height: 40px;
-  background-color: lightgray;
+
   border: none;
   width: 40%;
   padding: 0 20px;
 }
 .news-letter-inp button {
-  background-color: red; /* Green */
   font-family: Montserrat;
   border: none;
   color: white;
-  /* padding: 15px 32px; */
   height: 40px;
   text-align: center;
-  /* text-decoration: none;
-  display: inline-block; */
   font-size: 16px;
   width: 15%;
   font-weight: 600;
@@ -112,7 +97,11 @@
 }
 .news-letter-checkbox p {
   padding: 0 10px;
-  color: gray;
+}
+
+.check-box {
+  width: 10px;
+  height: 10px;
 }
 /* Responsiveness */
 @media only screen and (max-width: 1000px) {
@@ -121,7 +110,6 @@
   }
   .custom-icon-sizing {
     font-size: 15px;
-    color: rgb(54, 54, 54);
   }
   .foot-section {
     padding: 80px 5px 80px 15px;
@@ -160,7 +148,6 @@
   }
   .custom-icon-sizing {
     font-size: 12px;
-    color: rgb(54, 54, 54);
   }
 
   .foot-section {
@@ -202,7 +189,6 @@
   }
   .custom-icon-sizing {
     font-size: 9px;
-    color: rgb(54, 54, 54);
   }
   .foot-section {
     padding: 50px 0px 50px 10px;
@@ -232,9 +218,11 @@
     padding: 0 0.2rem 0 0;
   }
   .foot-section .heading span {
-    /* position: absolute; */
-    /* bottom: 30px; */
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid;
+  }
+  .check-box {
+    width: 8px;
+    height: 8px;
   }
 }
 @media only screen and (max-width: 350px) {
@@ -246,7 +234,6 @@
   }
   .custom-icon-sizing {
     font-size: 8px;
-    color: rgb(54, 54, 54);
   }
   .foot-section {
     padding: 50px 0px 50px 10px;
@@ -276,8 +263,10 @@
     padding: 0 0.2rem 0 0;
   }
   .foot-section .heading span {
-    /* position: absolute; */
-    /* bottom: 30px; */
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid;
+  }
+  .check-box {
+    width: 6px;
+    height: 6px;
   }
 }
