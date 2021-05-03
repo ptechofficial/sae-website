@@ -3,6 +3,10 @@ const DataAccelerons = {
   accentColor: 'red',
 
   textColor: 'black',
+  landingImgSrc: {
+    front: '../src/Assets/landingAccelerons_front.png"',
+    back: '../src/Assets/landingAccelerons_back.png',
+  },
   aboutUs: {
     name: 'aboutus',
     contentBody: (

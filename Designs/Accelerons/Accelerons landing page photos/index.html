@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="landing">
+      <div class="overlay-img"></div>
+      <div class="landing-text">
+        <span class="head1"> Team </span>
+        <span class="head2">Accelerons</span>
+      </div>
+      <div class="arrow bounce">
+        <i class="fas fa-angle-double-down fa-2x"></i>
+      </div>
+    </section>
+    <script>
+      let overlayText = document.querySelector('.landing-text');
+
+      window.onscroll = () => {
+        let pos = window.scrollY;
+        overlayText.style.left = `${350 + pos / 6}px`;
+        // overlayText.style.bottom += `${300 + pos}px`;
+      };
+    </script>
+    <script
+      src="https://kit.fontawesome.com/f410a16b22.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

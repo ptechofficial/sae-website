@@ -2,8 +2,6 @@ import React from 'react';
 import '../Styling/Footer.css';
 
 const Footer = ({ accentColor, footerColors }) => {
-  console.log(footerColors);
-
   return (
     <section
       className='footerArea'

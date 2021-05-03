@@ -12,12 +12,5 @@ class App extends Component {
     );
   }
 }
-// function App() {
-//   return (
-//     <>
-//       <Accelerons />
-//     </>
-//   );
-// }
 
 export default App;

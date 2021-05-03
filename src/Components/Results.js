@@ -3,7 +3,6 @@ import '../Styling/Results.css';
 
 const Results = ({ accelerons }) => {
   const [resultData, setResultData] = useState(accelerons.results[0]);
-  console.log(resultData);
   const results = accelerons.results;
   return (
     <div className='one-card results'>
@@ -40,32 +39,10 @@ const Results = ({ accelerons }) => {
         </div>
         <div className='content-body'>
           <div className='timeline-years center-items'>
-            {/* <span className='center-items arrows'>{'<'}</span> */}
-            {/* <span className='center-items year'>
-              <a>2020</a>{' '}
-            </span>
-            <span className='center-items year'>
-              <a>2019</a>{' '}
-            </span>
-            <span className='center-items year'>
-              <a>2018</a>{' '}
-            </span>
-            <span className='center-items year'>
-              <a>2017</a>{' '}
-            </span>
-            <span className='center-items year'>
-              <a>2016</a>{' '}
-            </span>
-            <span className='center-items year'>
-              <a>2015</a>{' '}
-            </span>
-            <span className='center-items'>
-              <a>2014</a>{' '}
-            </span> */}
             {results.map((result, index) => {
               if (index < 7) {
                 return (
-                  <span className='center-items year'>
+                  <span key={index} className='center-items year'>
                     <a
                       onClick={() => {
                         setResultData(results[index]);
@@ -75,9 +52,8 @@ const Results = ({ accelerons }) => {
                     </a>
                   </span>
                 );
-              }
+              } else return;
             })}
-            {/* <span className='center-items arrows'>{'>'}</span> */}
           </div>
           <div className='timeline-data'>
             <div
