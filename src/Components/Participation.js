@@ -77,8 +77,8 @@ const Participation = ({ accelerons }) => {
       </div>
       <div className='right-side align-right'>
         <div className='social-icons'>
-          <i className='fab fa-facebook-square fa-2x'></i>
-          <i className='fab fa-instagram fa-2x'></i>
+          {/* <i className='fab fa-facebook-square fa-2x'></i>
+          <i className='fab fa-instagram fa-2x'></i> */}
         </div>
       </div>
     </div>

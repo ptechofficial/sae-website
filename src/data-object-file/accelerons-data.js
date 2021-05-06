@@ -68,12 +68,110 @@ const DataAccelerons = {
       </p>
     ),
   },
-  teamMembers: {
-    name: 'Prakarsh Gupta',
-    desg: 'Designation',
-    img_src:
-      'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
-  },
+  teamMembers: [
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Brakes Engineer',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Ritik Goel',
+      desg: 'Vice Captain',
+      img_src:
+        'https://www.saenitkurukshetra.com/4th%20year/4th%20year/Accelerons_RitikGoyal.jpg',
+    },
+    {
+      name: 'Yogita Sangwan',
+      desg: 'DAQ Analyst',
+      img_src:
+        'https://www.saenitkurukshetra.com/4th%20year/4th%20year/Accelerons_YogitaSangwan.jpg',
+    },
+    {
+      name: 'Mrinal Sethi',
+      desg: 'Brakes Engineer',
+      img_src:
+        'https://www.saenitkurukshetra.com/3rd%20year/3rd%20year/Accelerons_MrinalSethi.jpeg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+    {
+      name: 'Prakarsh Gupta',
+      desg: 'Designation',
+      img_src:
+        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+    },
+  ],
   results: [
     {
       year: '2020',

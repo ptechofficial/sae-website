@@ -13,7 +13,7 @@
 .results .content {
   grid-column: 2/6;
   display: grid;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
 }
 .results .content-header {
   grid-row: 2/3;
@@ -27,7 +27,7 @@
   font-weight: 800;
 }
 .results .content-body {
-  grid-row: 3/8;
+  grid-row: 3/9;
 
   color: rgba(34, 34, 34, 1);
   font-size: 1.1rem;
@@ -101,6 +101,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 
 .results .timeline-data .year-achv {
@@ -108,7 +109,9 @@
   margin: 0 1rem;
   border: 1px solid black;
   display: grid;
+  background-color: white;
   grid-template-rows: 1fr 1fr;
+  z-index: 1;
 }
 /* .results .timeline-data .year-achv * {
   border: 1px solid black;

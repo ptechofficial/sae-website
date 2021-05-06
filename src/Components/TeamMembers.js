@@ -21,6 +21,7 @@ const TeamPerson = ({ personData }) => {
 };
 
 const TeamMembers = ({ accelerons }) => {
+  const peopleArray = accelerons.teamMembers;
   return (
     <div className='one-card team-member'>
       <div className='left-side'>
@@ -57,24 +58,9 @@ const TeamMembers = ({ accelerons }) => {
         <div className='content-body'>
           {/* <!-- Person --> */}
           <ul className='people'>
-            <TeamPerson key='1' personData={accelerons.teamMembers} />
-            <TeamPerson key='2' personData={accelerons.teamMembers} />
-            <TeamPerson key='3' personData={accelerons.teamMembers} />
-            <TeamPerson key='4' personData={accelerons.teamMembers} />
-            <TeamPerson key='5' personData={accelerons.teamMembers} />
-            <TeamPerson key='6' personData={accelerons.teamMembers} />
-            <TeamPerson key='7' personData={accelerons.teamMembers} />
-            <TeamPerson key='8' personData={accelerons.teamMembers} />
-            <TeamPerson key='9' personData={accelerons.teamMembers} />
-            <TeamPerson key='10' personData={accelerons.teamMembers} />
-            <TeamPerson key='11' personData={accelerons.teamMembers} />
-            <TeamPerson key='12' personData={accelerons.teamMembers} />
-            <TeamPerson key='13' personData={accelerons.teamMembers} />
-            <TeamPerson key='14' personData={accelerons.teamMembers} />
-            <TeamPerson key='15' personData={accelerons.teamMembers} />
-            <TeamPerson key='16' personData={accelerons.teamMembers} />
-            <TeamPerson key='17' personData={accelerons.teamMembers} />
-            <TeamPerson key='18' personData={accelerons.teamMembers} />
+            {peopleArray.map((dataPerson, index) => {
+              return <TeamPerson key={index} personData={dataPerson} />;
+            })}
           </ul>
 
           <div className='foot-empty'></div>
@@ -82,8 +68,8 @@ const TeamMembers = ({ accelerons }) => {
       </div>
       <div className='right-side align-right'>
         <div className='social-icons'>
-          <i className='fab fa-facebook-square fa-2x'></i>
-          <i className='fab fa-instagram fa-2x'></i>
+          {/* <i className='fab fa-facebook-square fa-2x'></i>
+          <i className='fab fa-instagram fa-2x'></i> */}
         </div>
       </div>
     </div>

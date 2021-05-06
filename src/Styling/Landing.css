@@ -27,8 +27,9 @@
   position: absolute;
   display: grid;
   grid-template-rows: 0.5fr 3fr;
-  top: 210px;
+  top: 240px;
   left: 350px;
+  opacity: 1;
   white-space: nowrap;
   font-weight: 800;
 }

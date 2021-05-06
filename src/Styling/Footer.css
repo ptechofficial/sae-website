@@ -1,3 +1,6 @@
+.footerArea * {
+  border: 1px solid black;
+}
 .footerArea {
   border: 1px solid black;
   height: 40vh;

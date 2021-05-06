@@ -26,8 +26,11 @@ const Landing = ({ imgSrc }) => {
           (window.onscroll = () => {
             let pos = window.scrollY;
             document.querySelector('.landing-text').style.left = `${
-              350 + pos / 1
+              350 + pos / 3
             }px`;
+            document.querySelector('.landing-text').style.opacity = `${
+              1 - pos / 900
+            }`;
           })
         }
       </script>
