@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   /* background-image: url('../Assets/landingAccelerons_front.png'); */
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -17,7 +17,7 @@
   overflow-y: hidden;
   position: relative;
   background-image: url('../Assets/landingAccelerons_back.png');
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -27,18 +27,15 @@
   position: absolute;
   display: grid;
   grid-template-rows: 0.5fr 3fr;
-  top: 240px;
-  left: 350px;
+  /* top: 240px;
+  left: 350px; */
   opacity: 1;
   white-space: nowrap;
   font-weight: 800;
 }
 .landing .head1 {
-  font-size: 73px;
+  /* font-size: 73px; */
   line-height: 0.5;
-}
-.landing .head2 {
-  font-size: 183px;
 }
 .landing .arrow {
   z-index: 1;
@@ -68,5 +65,37 @@
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+/* @media only screen and (max-width: 1000px) {
+  .landing .head1 {
+    font-size: 50px;
+  }
+  .landing .head2 {
+    font-size: 113px;
+  }
+  .landing .landing-text {
+    top: 260px;
+    left: 270px;
+  }
+}*/
+@media only screen and (max-width: 700px) {
+  .landing {
+    height: 75vh;
+    background-position: 25% 0;
+  }
+  .landing .overlay-img {
+    background-position: 25% 0;
+    height: 75vh;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing {
+    height: 75vh;
+    background-position: 15% 0;
+  }
+  .landing .overlay-img {
+    background-position: 15% 0;
+    height: 75vh;
   }
 }

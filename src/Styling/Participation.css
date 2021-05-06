@@ -2,6 +2,9 @@
 .comp-details {
   min-height: 130vh;
 }
+.comp-details * {
+  z-index: 1;
+}
 .comp-details .content {
   grid-column: 2/6;
   display: grid;

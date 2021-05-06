@@ -2,7 +2,9 @@
   height: 100vh;
   /* height: 100%; */
 }
-
+.results * {
+  z-index: 1;
+}
 .results .vertical-line .right-box {
   border-left: 3px solid black;
 }
@@ -101,7 +103,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1;
 }
 
 .results .timeline-data .year-achv {
@@ -111,7 +112,6 @@
   display: grid;
   background-color: white;
   grid-template-rows: 1fr 1fr;
-  z-index: 1;
 }
 /* .results .timeline-data .year-achv * {
   border: 1px solid black;

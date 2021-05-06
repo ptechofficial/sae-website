@@ -1,11 +1,20 @@
 .footerArea * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .footerArea {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 40vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+}
+
+.footerArea * {
+  z-index: 1;
+}
+.footerContent {
+  grid-column: 2/7;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .foot-section {
   display: grid;
@@ -29,14 +38,14 @@
 }
 
 .explore-us {
-  grid-column: 2/3;
+  grid-column: 1/2;
 }
 .explore-us .footer-links {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
 }
 .social-link {
-  grid-column: 3/4;
+  grid-column: 2/3;
 }
 .social-link .footer-links {
   display: grid;
@@ -55,7 +64,7 @@
   padding: 0 0.4rem;
 }
 .contact-us {
-  grid-column: 4/5;
+  grid-column: 3/4;
 }
 .contact-us .footer-links {
   display: grid;
@@ -69,7 +78,7 @@
   padding: 0 0.8rem 0 0;
 }
 .news-letter {
-  grid-column: 5/7;
+  grid-column: 4/6;
 }
 .news-letter-area {
   display: grid;
@@ -146,16 +155,21 @@
   .footerArea {
     height: 30vh;
   }
+  .footerContent {
+    margin: 0 0 0 20px;
+  }
   .foot-section .heading {
     font-size: 11px;
   }
   .custom-icon-sizing {
     font-size: 12px;
   }
-
+  .footerContent {
+    grid-column: 1/7;
+  }
   .foot-section {
     grid-template-rows: 0.5fr 1fr;
-    padding: 50px 0px 80px 10px;
+    padding: 20px 0px 40px 10px;
   }
   .news-letter-inp input {
     height: 25px;
@@ -185,7 +199,7 @@
 /* mobile */
 @media only screen and (max-width: 500px) {
   .footerArea {
-    height: 30vh;
+    height: 25vh;
   }
   .foot-section .heading {
     font-size: 10px;
@@ -194,13 +208,16 @@
     font-size: 9px;
   }
   .foot-section {
-    padding: 50px 0px 50px 10px;
+    padding: 40px 0px 50px 10px;
   }
   .news-letter-inp input {
     height: 20px;
     width: 40%;
     padding: 0 5px;
     font-size: 8px;
+  }
+  .footerContent {
+    margin: 0 0 0 10px;
   }
   .news-letter-inp button {
     height: 20px;
@@ -230,7 +247,7 @@
 }
 @media only screen and (max-width: 350px) {
   .footerArea {
-    height: 37vh;
+    height: 25vh;
   }
   .foot-section .heading {
     font-size: 9px;
@@ -239,8 +256,9 @@
     font-size: 8px;
   }
   .foot-section {
-    padding: 50px 0px 50px 10px;
+    padding: 40px 0px 40px 10px;
   }
+
   .news-letter-inp input {
     height: 15px;
     width: 40%;

@@ -6,6 +6,9 @@
   background-color: black;
   color: white;
 }
+.team-member * {
+  z-index: 1;
+}
 .team-member .content {
   grid-column: 2/6;
   display: grid;
@@ -52,7 +55,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 1;
 }
 .team-member .person-details {
   display: grid;

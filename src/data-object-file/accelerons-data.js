@@ -3,9 +3,33 @@ const DataAccelerons = {
   accentColor: 'red',
 
   textColor: 'black',
-  landingImgSrc: {
+  landing: {
     front: '../src/Assets/landingAccelerons_front.png"',
     back: '../src/Assets/landingAccelerons_back.png',
+    widthFull: {
+      top: '240',
+      left: '350',
+      fontHead1: '73px',
+      fontHead2: '183px',
+    },
+    width1000: {
+      top: '260',
+      left: '270',
+      fontHead1: '50px',
+      fontHead2: '113px',
+    },
+    width700: {
+      top: '240',
+      left: '160',
+      fontHead1: '35px',
+      fontHead2: '70px',
+    },
+    width400: {
+      top: '90',
+      left: '50',
+      fontHead1: '25px',
+      fontHead2: '50px',
+    },
   },
   aboutUs: {
     name: 'aboutus',

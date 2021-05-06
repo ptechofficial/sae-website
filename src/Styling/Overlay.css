@@ -45,10 +45,12 @@
   }
   .icons i {
     margin: 7px 15px 7px 0;
+    font-size: 25px;
   }
 }
 @media only screen and (max-width: 500px) {
   .icons i {
     margin: 5px 10px 5px 0;
+    font-size: 20px;
   }
 }

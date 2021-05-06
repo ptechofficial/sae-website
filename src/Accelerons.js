@@ -14,7 +14,7 @@ const Accelerons = () => {
   return (
     <>
       <Overlay />
-      <Landing imgSrc={DataAccelerons.landingImgSrc} />
+      <Landing landing={DataAccelerons.landing} />
       <AboutUs accelerons={DataAccelerons} />
       <Participation accelerons={DataAccelerons} />
       <TeamMembers accelerons={DataAccelerons} />
