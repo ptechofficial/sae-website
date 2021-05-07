@@ -42,6 +42,7 @@ const Landing = ({ landing }) => {
             top: respProp.top + 'px',
             left: respProp.left + 'px',
           }}
+          data-aos='fade-left'
         >
           <span
             className='head1'

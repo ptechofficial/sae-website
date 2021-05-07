@@ -39,7 +39,7 @@ const Participation = ({ accelerons }) => {
           </span>
         </div>
         <div className='content-body'>
-          <div className='content-supra'>
+          <div className='content-supra' data-aos='fade-left'>
             <span className='supra-header'>
               <u>{accelerons.participate.firstName}</u>
             </span>
@@ -59,7 +59,7 @@ const Participation = ({ accelerons }) => {
               }}
             ></span>
           </div>
-          <div className='content-fbharat'>
+          <div className='content-fbharat' data-aos='fade-right'>
             <span className='fbharat-header align-right'>
               <u>{accelerons.participate.secondName}</u>
             </span>

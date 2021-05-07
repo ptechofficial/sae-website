@@ -4,7 +4,7 @@ import '../Styling/TeamMembers.css';
 const TeamPerson = ({ personData }) => {
   return (
     <li>
-      <div className='person'>
+      <div className='person' data-aos='fade-up'>
         <span
           className='person-img'
           style={{ backgroundImage: `url(${personData.img_src})` }}
@@ -49,7 +49,7 @@ const TeamMembers = ({ accelerons }) => {
       </div>
       <div className='content'>
         <div className='content-header'>
-          <span>
+          <span data-aos='fade-left'>
             <p>
               meet our <b>TEAM</b>
             </p>

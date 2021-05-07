@@ -28,7 +28,7 @@ const AboutUs = ({ accelerons }) => {
         </div>
       </div>
       <div className='content'>
-        <div className='content-header'>
+        <div data-aos='fade-up' className='content-header'>
           <span>
             <p>
               we are{' '}
@@ -36,7 +36,7 @@ const AboutUs = ({ accelerons }) => {
             </p>
           </span>
         </div>
-        <div className='content-body'>
+        <div data-aos='fade-up' className='content-body'>
           <span>{accelerons.aboutUs.contentBody}</span>
           <span
             className='comp-names'
@@ -51,7 +51,12 @@ const AboutUs = ({ accelerons }) => {
               {accelerons.aboutUs.competitiions.second}{' '}
             </span>
           </span>
-          <span className='team-car-img'>hey</span>
+          <img
+            data-aos='fade-left'
+            src={accelerons.aboutUs.imgSrc}
+            alt=''
+            className='team-car-img'
+          />
         </div>
       </div>
       <div className='right-side align-right'>

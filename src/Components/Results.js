@@ -59,6 +59,7 @@ const Results = ({ accelerons }) => {
             <div
               className='year-img'
               style={{ backgroundImage: `url(${resultData.img_src})` }}
+              data-aos='fade-in'
             ></div>
             <div className='year-achv'>
               <div className='comp-name'>
@@ -68,7 +69,9 @@ const Results = ({ accelerons }) => {
                 >
                   {accelerons.participate.firstName}
                 </div>
-                <div className='comp-data'>{resultData.supra}</div>
+                <div className='comp-data' data-aos='fade-left'>
+                  {resultData.supra}
+                </div>
               </div>
               <div className='comp-name'>
                 <div
@@ -77,7 +80,9 @@ const Results = ({ accelerons }) => {
                 >
                   {accelerons.participate.secondName}
                 </div>
-                <div className='comp-data'>{resultData.fbharat}</div>
+                <div className='comp-data' data-aos='fade-left'>
+                  {resultData.fbharat}
+                </div>
               </div>
             </div>
           </div>
