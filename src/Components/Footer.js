@@ -33,13 +33,13 @@ const Footer = ({ accentColor, footerColors }) => {
               <span>Team Accelerons</span>
               <span className='social-logo'>
                 <i
-                  class='fab fa-instagram custom-icon-sizing'
+                  className='fab fa-instagram custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
               <span className='social-logo'>
                 <i
-                  class='fab fa-facebook-square custom-icon-sizing'
+                  className='fab fa-facebook-square custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
@@ -48,13 +48,13 @@ const Footer = ({ accentColor, footerColors }) => {
               <span>Team Nitrox</span>
               <span className='social-logo'>
                 <i
-                  class='fab fa-instagram custom-icon-sizing'
+                  className='fab fa-instagram custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
               <span className='social-logo'>
                 <i
-                  class='fab fa-facebook-square custom-icon-sizing'
+                  className='fab fa-facebook-square custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
@@ -63,13 +63,13 @@ const Footer = ({ accentColor, footerColors }) => {
               <span>Autokriti</span>
               <span className='social-logo'>
                 <i
-                  class='fab fa-instagram custom-icon-sizing'
+                  className='fab fa-instagram custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
               <span className='social-logo'>
                 <i
-                  class='fab fa-facebook-square custom-icon-sizing'
+                  className='fab fa-facebook-square custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
@@ -84,7 +84,7 @@ const Footer = ({ accentColor, footerColors }) => {
             <span className='indv-contact'>
               <span className='contact-logo'>
                 <i
-                  class='fas fa-phone-alt custom-icon-sizing'
+                  className='fas fa-phone-alt custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
@@ -93,7 +93,7 @@ const Footer = ({ accentColor, footerColors }) => {
             <span className='indv-contact'>
               <span className='contact-logo'>
                 <i
-                  class='far fa-envelope custom-icon-sizing'
+                  className='far fa-envelope custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>
@@ -104,7 +104,7 @@ const Footer = ({ accentColor, footerColors }) => {
             <span className='indv-contact'>
               <span className='contact-logo'>
                 <i
-                  class='fab fa-linkedin custom-icon-sizing'
+                  className='fab fa-linkedin custom-icon-sizing'
                   style={{ color: footerColors.iconColor }}
                 ></i>
               </span>

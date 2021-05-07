@@ -1,6 +1,5 @@
 .results {
   height: 100vh;
-  /* height: 100%; */
 }
 .results * {
   z-index: 1;
@@ -89,7 +88,7 @@
 .results .timeline-years .year {
   border-right: 2px solid black;
 }
-.results .timeline-years span a:active {
+.results .timeline-years span p:active {
   font-weight: 800;
 }
 .results .timeline-data {

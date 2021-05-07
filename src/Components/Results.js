@@ -43,13 +43,13 @@ const Results = ({ accelerons }) => {
               if (index < 7) {
                 return (
                   <span key={index} className='center-items year'>
-                    <a
+                    <p
                       onClick={() => {
                         setResultData(results[index]);
                       }}
                     >
                       {result.year}
-                    </a>
+                    </p>
                   </span>
                 );
               } else return;

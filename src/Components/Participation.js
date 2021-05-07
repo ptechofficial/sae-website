@@ -2,7 +2,6 @@ import React from 'react';
 import '../Styling/Participation.css';
 
 const Participation = ({ accelerons }) => {
-  console.log(accelerons.participate);
   return (
     <div className='one-card comp-details'>
       <div className='left-side'>
@@ -53,7 +52,12 @@ const Participation = ({ accelerons }) => {
                 {accelerons.participate.firstInfo_point}
               </div>
             </span>
-            <span className='supra-img'> supra img </span>
+            <span
+              className='supra-img'
+              style={{
+                backgroundImage: `url(${accelerons.participate.firstImgSrc})`,
+              }}
+            ></span>
           </div>
           <div className='content-fbharat'>
             <span className='fbharat-header align-right'>
@@ -70,7 +74,12 @@ const Participation = ({ accelerons }) => {
                 {accelerons.participate.secondInfo_point}
               </div>
             </span>
-            <span className='fbharat-img'> supra img </span>
+            <span
+              className='fbharat-img'
+              style={{
+                backgroundImage: `url(${accelerons.participate.secondImgSrc})`,
+              }}
+            ></span>
           </div>
         </div>
         <div className='empty-area'></div>

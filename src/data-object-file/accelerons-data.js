@@ -4,8 +4,10 @@ const DataAccelerons = {
 
   textColor: 'black',
   landing: {
-    front: '../src/Assets/landingAccelerons_front.png"',
-    back: '../src/Assets/landingAccelerons_back.png',
+    front:
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingAccelerons_front.png?raw=true',
+    back:
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingAccelerons_back.png?raw=true',
     widthFull: {
       top: '240',
       left: '350',
@@ -59,6 +61,8 @@ const DataAccelerons = {
   },
   participate: {
     firstName: 'SUPRA',
+    firstImgSrc:
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/supra.jpg?raw=true',
     firstInfo_main: (
       <p>
         SUPRA SAEINDIA Student Formula is a national engineering design
@@ -76,6 +80,8 @@ const DataAccelerons = {
       </p>
     ),
     secondName: 'FORMULA BHARAT',
+    secondImgSrc:
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/fbharat.jpg?raw=true',
     secondInfo_main: (
       <p>
         Formula Bharat is an engineering design competition in which students

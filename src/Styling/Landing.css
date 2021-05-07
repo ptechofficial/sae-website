@@ -16,7 +16,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
-  background-image: url('../Assets/landingAccelerons_back.png');
+  /* background-image: url('../Assets/landingAccelerons_back.png'); */
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,37 +1,39 @@
 import React, { useState, useEffect } from 'react';
 import '../Styling/Landing.css';
 import useWindowSize from './use-window-size';
-import frontImg from '../Assets/landingAccelerons_front.png';
 
 const Landing = ({ landing }) => {
   const size = useWindowSize();
-  // console.log(landing);
-
   const [respProp, setRespProp] = useState(landing.widthFull);
-  // console.log('RespProp : ', respProp);
-  // console.log('full');
   useEffect(() => {
     if (size.width >= 1000) {
       setRespProp(landing.widthFull);
-      // console.log(respProp);
     } else if (size.width < 1000 && size.width > 700) {
       setRespProp(landing.width1000);
-      // console.log(respProp);
     } else if (size.width < 700 && size.width > 400) {
       setRespProp(landing.width700);
-      // console.log(respProp);
     } else if (size.width < 400) {
       setRespProp(landing.width400);
-      // console.log(respProp);
     }
-  });
+  }, [
+    size.width,
+    landing.widthFull,
+    landing.width1000,
+    landing.width700,
+    landing.width400,
+  ]);
   return (
     <>
-      <section className='landing'>
+      <section
+        className='landing'
+        style={{
+          backgroundImage: `url(${landing.back})`,
+        }}
+      >
         <div
           className='overlay-img'
           style={{
-            backgroundImage: `url(${frontImg})`,
+            backgroundImage: `url(${landing.front})`,
           }}
         ></div>
         <div

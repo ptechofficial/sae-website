@@ -96,7 +96,10 @@
 .comp-details .supra-img,
 .fbharat-img {
   margin: 0.6rem 0;
-  background-color: black;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 /* fbharat */
 .comp-details .content-body .content-fbharat {
