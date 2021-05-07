@@ -13,16 +13,16 @@ const Landing = ({ landing }) => {
   useEffect(() => {
     if (size.width >= 1000) {
       setRespProp(landing.widthFull);
-      console.log(respProp);
+      // console.log(respProp);
     } else if (size.width < 1000 && size.width > 700) {
       setRespProp(landing.width1000);
-      console.log(respProp);
+      // console.log(respProp);
     } else if (size.width < 700 && size.width > 400) {
       setRespProp(landing.width700);
-      console.log(respProp);
+      // console.log(respProp);
     } else if (size.width < 400) {
       setRespProp(landing.width400);
-      console.log(respProp);
+      // console.log(respProp);
     }
   });
   return (
