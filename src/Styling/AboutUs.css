@@ -1,9 +1,11 @@
 /* CSS for AboutUs */
 .about-us {
   height: 100vh;
-  /* border: 1px solid black; */
 }
-
+.about-us * {
+  border: 1px solid black;
+  z-index: 1;
+}
 .about-us .content {
   grid-column: 2/6;
   display: grid;
@@ -26,6 +28,9 @@
   color: rgba(34, 34, 34, 1);
   font-size: 1.1rem;
   line-height: 1.4;
+}
+.team-car-img {
+  background-image: url('../Assets/only\ car.png');
 }
 .about-us .content-body b {
   font-weight: 800;

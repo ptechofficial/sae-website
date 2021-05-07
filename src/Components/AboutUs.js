@@ -51,6 +51,7 @@ const AboutUs = ({ accelerons }) => {
               {accelerons.aboutUs.competitiions.second}{' '}
             </span>
           </span>
+          <span className='team-car-img'>hey</span>
         </div>
       </div>
       <div className='right-side align-right'>
