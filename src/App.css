@@ -15,7 +15,7 @@ body {
 }
 .one-card {
   width: 100%;
-  background-color: white;
+  /* background-color: white; */
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   /* border: 1px solid black; */
@@ -49,9 +49,9 @@ body {
     margin: 0.1rem;
   }
   .vertical-line .right-box {
-    border-left: 2px solid black;
+    border-left: 2px solid;
   }
   .vertical-line .left-box {
-    border-right: 2px solid black;
+    border-right: 2px solid;
   }
 }

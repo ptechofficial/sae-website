@@ -1,0 +1,83 @@
+[33mcommit fb01d37ce14ef823084502b1c21ecd576e037b0f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Sat May 8 00:37:53 2021 +0530
+
+    added on-scroll animations
+
+[33mcommit 21c2bb31d31be37600cac6341311fc96e91b7d71[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Fri May 7 14:57:43 2021 +0530
+
+    added acc img
+
+[33mcommit 9ca657884b36b8df69a6e02ecb5623e237537dbe[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Fri May 7 14:50:04 2021 +0530
+
+    removed errors and added locations
+
+[33mcommit 7df0451e5f4f3df6b281be9f3c861149d31d6eac[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Fri May 7 14:15:50 2021 +0530
+
+    adding images to public url
+
+[33mcommit 86e3c1c5d58352242b78cf3cbf7fa005ac807a1e[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Thu May 6 23:03:54 2021 +0530
+
+    Responsiveness for landing page"
+
+[33mcommit ced585d426a63cc6d802bacc07533954eb3bc3a0[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Thu May 6 16:36:04 2021 +0530
+
+    Z-index of images to 1
+
+[33mcommit 3bcaddac2bf7703e3528ededf6af6b1d4abc0b36[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Tue May 4 02:47:26 2021 +0530
+
+    4-05-2021 added landing page, dynamic link left
+
+[33mcommit 03dea61f3c6cced948cd566d4fbeeb09508510cb[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Sat May 1 17:41:40 2021 +0530
+
+    dynamic footer component
+
+[33mcommit fe709f3fb08d9a1e8d731b9e6ab2acaff3aba8ba[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Sat May 1 01:53:28 2021 +0530
+
+    big update, added files, and added footer with reponsiveness"
+
+[33mcommit 520f2b35569305bb70c053e9bb8c0565a555837c[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Fri Apr 30 15:35:28 2021 +0530
+
+    removed horz scroll and added functionality to results comp
+
+[33mcommit 19a33eaf5061d867b259dfa28efae92343b12487[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Fri Apr 30 01:55:46 2021 +0530
+
+    Adding horizontal scroll w/o css
+
+[33mcommit 63f2c30af521574c2fdc4fd72dec7f935986816a[m
+Author: ptechofficial <64535754+ptechofficial@users.noreply.github.com>
+Date:   Wed Apr 28 22:56:45 2021 +0530
+
+    first
+
+[33mcommit 4d66f46a4ce3cbf9d000745185d569c3f0b35bb2[m
+Author: Prakarsh Gupta <64535754+ptechofficial@users.noreply.github.com>
+Date:   Wed Apr 28 22:52:07 2021 +0530
+
+    Delete README.md
+
+[33mcommit 458b137fa8574fc336db7609398c6a9519f7a438[m
+Author: Prakarsh Gupta <64535754+ptechofficial@users.noreply.github.com>
+Date:   Wed Apr 28 22:48:11 2021 +0530
+
+    Initial commit

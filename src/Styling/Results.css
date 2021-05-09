@@ -5,10 +5,10 @@
   z-index: 1;
 }
 .results .vertical-line .right-box {
-  border-left: 3px solid black;
+  border-left: 3px solid;
 }
 .results .vertical-line .left-box {
-  border-right: 3px solid black;
+  border-right: 3px solid;
 }
 
 .results .content {
@@ -86,7 +86,7 @@
   max-width: 100%;
 }
 .results .timeline-years .year {
-  border-right: 2px solid black;
+  border-right: 2px solid;
 }
 .results .timeline-years span p:active {
   font-weight: 800;

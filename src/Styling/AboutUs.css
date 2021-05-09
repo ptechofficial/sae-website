@@ -25,7 +25,6 @@
 .about-us .content-body {
   grid-row: 3/9;
   padding-top: 1rem;
-  color: rgba(34, 34, 34, 1);
   font-size: 1.1rem;
   line-height: 1.4;
   position: relative;
@@ -38,7 +37,7 @@
 }
 .about-us .content-body b {
   font-weight: 800;
-  color: rgba(95, 95, 95, 1);
+  /* color: rgba(95, 95, 95, 1); */
 }
 .about-us .left-side,
 .about-us .right-side {
@@ -73,10 +72,10 @@
   grid-template-columns: 1fr 1fr;
 }
 .about-us .vertical-line .right-box {
-  border-left: 3px solid black;
+  border-left: 3px solid;
 }
 .about-us .vertical-line .left-box {
-  border-right: 3px solid black;
+  border-right: 3px solid;
 }
 .about-us .card-counter {
   grid-row: 1/2;
@@ -151,10 +150,10 @@
   }
 
   .about-us .vertical-line .right-box {
-    border-left: 2px solid black;
+    border-left: 2px solid;
   }
   .about-us .vertical-line .left-box {
-    border-right: 2px solid black;
+    border-right: 2px solid;
   }
   .about-us .title-line .vertical-header {
     font-size: 7px;
@@ -166,7 +165,7 @@
     bottom: -40px;
     right: 0;
     position: absolute;
-    height: 30%;
+    height: 27%;
   }
 }
 @media only screen and (max-width: 350px) {

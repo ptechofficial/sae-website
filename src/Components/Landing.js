@@ -15,6 +15,7 @@ const Landing = ({ landing }) => {
     } else if (size.width < 400) {
       setRespProp(landing.width400);
     }
+    // console.log(respProp);
   }, [
     size.width,
     landing.widthFull,
@@ -42,7 +43,7 @@ const Landing = ({ landing }) => {
             top: respProp.top + 'px',
             left: respProp.left + 'px',
           }}
-          data-aos='fade-left'
+          data-aos='fade-up'
         >
           <span
             className='head1'

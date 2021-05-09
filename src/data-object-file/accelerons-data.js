@@ -35,6 +35,7 @@ const DataAccelerons = {
   },
   aboutUs: {
     name: 'aboutus',
+
     imgSrc:
       'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/only%20car.png?raw=true',
     contentBody: (

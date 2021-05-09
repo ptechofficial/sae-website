@@ -20,10 +20,15 @@ const TeamPerson = ({ personData }) => {
   );
 };
 
-const TeamMembers = ({ accelerons }) => {
+const TeamMembers = ({ itemColor, accelerons }) => {
   const peopleArray = accelerons.teamMembers;
   return (
-    <div className='one-card team-member'>
+    <div
+      className='one-card team-member'
+      style={{
+        color: itemColor,
+      }}
+    >
       <div className='left-side'>
         <div className='card-counter'>
           <span className='center-items'>
@@ -41,7 +46,12 @@ const TeamMembers = ({ accelerons }) => {
           <span className='vertical-header center-items'>
             <div style={{ transform: 'rotate(-90deg)' }}>TEAM MEMBERS</div>
           </span>
-          <span className='vertical-line'>
+          <span
+            className='vertical-line'
+            style={{
+              color: itemColor,
+            }}
+          >
             <span className='left-box'></span>
             <span className='right-box'></span>
           </span>
@@ -51,7 +61,14 @@ const TeamMembers = ({ accelerons }) => {
         <div className='content-header'>
           <span data-aos='fade-left'>
             <p>
-              meet our <b>TEAM</b>
+              meet our{' '}
+              <b
+                style={{
+                  color: accelerons.accentColor,
+                }}
+              >
+                TEAM
+              </b>
             </p>
           </span>
         </div>

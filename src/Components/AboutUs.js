@@ -1,9 +1,18 @@
 import React from 'react';
 import '../Styling/AboutUs.css';
 
-const AboutUs = ({ accelerons }) => {
+const AboutUs = ({ itemColor, accelerons }) => {
+  let contentBodyColor = 'rgba(34, 34, 34, 1)';
+  if (itemColor === 'white') {
+    contentBodyColor = 'rgb(131, 131, 131)';
+  }
   return (
-    <div className='one-card about-us'>
+    <div
+      className='one-card about-us'
+      style={{
+        color: itemColor,
+      }}
+    >
       <div className='left-side'>
         <div className='card-counter'>
           <span className='center-items'>
@@ -12,7 +21,7 @@ const AboutUs = ({ accelerons }) => {
               style={{
                 height: '0.1px',
                 width: '60%',
-                backgroundColor: 'black',
+                backgroundColor: itemColor,
               }}
             />
           </span>
@@ -21,7 +30,12 @@ const AboutUs = ({ accelerons }) => {
           <span className='vertical-header center-items'>
             <div style={{ transform: 'rotate(-90deg)' }}>ABOUT US</div>
           </span>
-          <span className='vertical-line'>
+          <span
+            className='vertical-line'
+            style={{
+              color: itemColor,
+            }}
+          >
             <span className='left-box'></span>
             <span className='right-box'></span>
           </span>
@@ -36,7 +50,13 @@ const AboutUs = ({ accelerons }) => {
             </p>
           </span>
         </div>
-        <div data-aos='fade-up' className='content-body'>
+        <div
+          data-aos='fade-up'
+          className='content-body'
+          style={{
+            color: contentBodyColor,
+          }}
+        >
           <span>{accelerons.aboutUs.contentBody}</span>
           <span
             className='comp-names'
@@ -52,7 +72,7 @@ const AboutUs = ({ accelerons }) => {
             </span>
           </span>
           <img
-            data-aos='fade-left'
+            data-aos='fade-up'
             src={accelerons.aboutUs.imgSrc}
             alt=''
             className='team-car-img'

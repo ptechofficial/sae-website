@@ -1,9 +1,18 @@
 import React from 'react';
 import '../Styling/Participation.css';
 
-const Participation = ({ accelerons }) => {
+const Participation = ({ itemColor, accelerons }) => {
+  let contentBodyColor = 'rgba(34, 34, 34, 1)';
+  if (itemColor === 'white') {
+    contentBodyColor = 'rgb(131, 131, 131)';
+  }
   return (
-    <div className='one-card comp-details'>
+    <div
+      className='one-card comp-details'
+      style={{
+        color: itemColor,
+      }}
+    >
       <div className='left-side'>
         <div className='card-counter'>
           <span className='center-items'>
@@ -12,7 +21,7 @@ const Participation = ({ accelerons }) => {
               style={{
                 height: '0.1px',
                 width: ' 60%',
-                backgroundColor: 'black',
+                backgroundColor: itemColor,
               }}
             />
           </span>
@@ -22,7 +31,12 @@ const Participation = ({ accelerons }) => {
             <span className='vertical-header center-items'>
               <div style={{ transform: 'rotate(-90deg)' }}>COMPETITIONS</div>
             </span>
-            <span className='vertical-line'>
+            <span
+              className='vertical-line'
+              style={{
+                color: itemColor,
+              }}
+            >
               <span className='left-box'></span>
               <span className='right-box'></span>
             </span>
@@ -38,8 +52,13 @@ const Participation = ({ accelerons }) => {
             </p>
           </span>
         </div>
-        <div className='content-body'>
-          <div className='content-supra' data-aos='fade-left'>
+        <div
+          className='content-body'
+          style={{
+            color: contentBodyColor,
+          }}
+        >
+          <div className='content-supra' data-aos='fade-up'>
             <span className='supra-header'>
               <u>{accelerons.participate.firstName}</u>
             </span>
@@ -59,7 +78,7 @@ const Participation = ({ accelerons }) => {
               }}
             ></span>
           </div>
-          <div className='content-fbharat' data-aos='fade-right'>
+          <div className='content-fbharat' data-aos='fade-up'>
             <span className='fbharat-header align-right'>
               <u>{accelerons.participate.secondName}</u>
             </span>

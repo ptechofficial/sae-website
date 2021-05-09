@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import '../Styling/Results.css';
 
-const Results = ({ accelerons }) => {
+const Results = ({ itemColor, accelerons }) => {
   const [resultData, setResultData] = useState(accelerons.results[0]);
   const results = accelerons.results;
   return (
-    <div className='one-card results'>
+    <div
+      className='one-card results'
+      style={{
+        color: itemColor,
+      }}
+    >
       <div className='left-side'>
         <div className='card-counter'>
           <span className='center-items'>
@@ -14,7 +19,7 @@ const Results = ({ accelerons }) => {
               style={{
                 height: '0.1px',
                 width: '60%',
-                backgroundColor: 'black',
+                backgroundColor: itemColor,
               }}
             />
           </span>
@@ -42,7 +47,13 @@ const Results = ({ accelerons }) => {
             {results.map((result, index) => {
               if (index < 7) {
                 return (
-                  <span key={index} className='center-items year'>
+                  <span
+                    key={index}
+                    className='center-items year'
+                    style={{
+                      color: itemColor,
+                    }}
+                  >
                     <p
                       onClick={() => {
                         setResultData(results[index]);
@@ -69,7 +80,7 @@ const Results = ({ accelerons }) => {
                 >
                   {accelerons.participate.firstName}
                 </div>
-                <div className='comp-data' data-aos='fade-left'>
+                <div className='comp-data' data-aos='fade-up'>
                   {resultData.supra}
                 </div>
               </div>
@@ -80,7 +91,7 @@ const Results = ({ accelerons }) => {
                 >
                   {accelerons.participate.secondName}
                 </div>
-                <div className='comp-data' data-aos='fade-left'>
+                <div className='comp-data' data-aos='fade-up'>
                   {resultData.fbharat}
                 </div>
               </div>
