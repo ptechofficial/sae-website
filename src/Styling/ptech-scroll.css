@@ -1,0 +1,43 @@
+.scroll-area {
+  z-index: 1.1;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: none;
+}
+.progress-container {
+  z-index: 1.1;
+  position: fixed;
+  bottom: 0;
+  right: 65px;
+  width: 1px;
+  height: 60vh;
+  /* background: #ccc; */
+}
+.possible-progress {
+  position: fixed;
+  bottom: 60vh - 5px;
+  height: 4px;
+  width: 4px;
+  transform: translateX(-1.5px);
+  /* background-color: black; */
+}
+
+.progress-bar {
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
+  height: 50px;
+  /* background: black; */
+  width: 5px;
+  transform: translate(-2px, 0);
+  position: relative;
+}
+
+.progress-num {
+  position: absolute;
+  transition: 500ms;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
