@@ -88,6 +88,9 @@
 .results .timeline-years .year {
   border-right: 2px solid;
 }
+.results .timeline-years .year:nth-last-child(1) {
+  border-right: none;
+}
 .results .timeline-years span p:active {
   font-weight: 800;
 }

@@ -72,7 +72,7 @@ const AboutUs = ({ itemColor, accelerons }) => {
             </span>
           </span>
           <img
-            data-aos='fade-up'
+            data-aos='fade-in'
             src={accelerons.aboutUs.imgSrc}
             alt=''
             className='team-car-img'

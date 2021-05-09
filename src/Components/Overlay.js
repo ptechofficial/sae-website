@@ -1,10 +1,15 @@
 import React from 'react';
 import '../Styling/Overlay.css';
 
-const Overlay = () => {
+const Overlay = ({ socialColor }) => {
   return (
     <>
-      <div className='overlay-social'>
+      <div
+        className='overlay-social'
+        style={{
+          color: socialColor,
+        }}
+      >
         <span className='icons'>
           <span>
             <i className='fab fa-facebook-square fa-2x'></i>
