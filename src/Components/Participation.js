@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styling/Participation.css';
 
-const Participation = ({ itemColor, accelerons }) => {
+const Participation = ({ itemColor, teamData }) => {
   let contentBodyColor = 'rgba(34, 34, 34, 1)';
   if (itemColor === 'white') {
     contentBodyColor = 'rgb(131, 131, 131)';
@@ -48,7 +48,7 @@ const Participation = ({ itemColor, accelerons }) => {
           <span>
             <p>
               where do we{' '}
-              <b style={{ color: accelerons.accentColor }}>PARTICIPATE?</b>
+              <b style={{ color: teamData.accentColor }}>PARTICIPATE?</b>
             </p>
           </span>
         </div>
@@ -58,45 +58,45 @@ const Participation = ({ itemColor, accelerons }) => {
             color: contentBodyColor,
           }}
         >
-          <div className='content-supra' data-aos='fade-up'>
-            <span className='supra-header'>
-              <u>{accelerons.participate.firstName}</u>
+          <div className='content-first' data-aos='fade-up'>
+            <span className='first-header'>
+              <u>{teamData.participate.firstName}</u>
             </span>
-            <span className='supra-info'>
-              {accelerons.participate.firstInfo_main}
+            <span className='first-info'>
+              {teamData.participate.firstInfo_main}
               <div
-                className='supra-point'
-                style={{ borderLeft: '0.2rem solid ' + accelerons.accentColor }}
+                className='first-point'
+                style={{ borderLeft: '0.2rem solid ' + teamData.accentColor }}
               >
-                {accelerons.participate.firstInfo_point}
+                {teamData.participate.firstInfo_point}
               </div>
             </span>
             <span
-              className='supra-img'
+              className='first-img'
               style={{
-                backgroundImage: `url(${accelerons.participate.firstImgSrc})`,
+                backgroundImage: `url(${teamData.participate.firstImgSrc})`,
               }}
             ></span>
           </div>
-          <div className='content-fbharat' data-aos='fade-up'>
-            <span className='fbharat-header align-right'>
-              <u>{accelerons.participate.secondName}</u>
+          <div className='content-second' data-aos='fade-up'>
+            <span className='second-header align-right'>
+              <u>{teamData.participate.secondName}</u>
             </span>
-            <span className='fbharat-info'>
-              {accelerons.participate.secondInfo_main}
+            <span className='second-info'>
+              {teamData.participate.secondInfo_main}
               <div
-                className='fbharat-point'
+                className='second-point'
                 style={{
-                  borderRight: '0.2rem solid ' + accelerons.accentColor,
+                  borderRight: '0.2rem solid ' + teamData.accentColor,
                 }}
               >
-                {accelerons.participate.secondInfo_point}
+                {teamData.participate.secondInfo_point}
               </div>
             </span>
             <span
-              className='fbharat-img'
+              className='second-img'
               style={{
-                backgroundImage: `url(${accelerons.participate.secondImgSrc})`,
+                backgroundImage: `url(${teamData.participate.secondImgSrc})`,
               }}
             ></span>
           </div>

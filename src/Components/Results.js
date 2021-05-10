@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import '../Styling/Results.css';
 
-const Results = ({ itemColor, accelerons }) => {
-  const [resultData, setResultData] = useState(accelerons.results[0]);
-  const results = accelerons.results;
+const Results = ({ itemColor, teamData }) => {
+  const [resultData, setResultData] = useState(teamData.results[0]);
+  const results = teamData.results;
   return (
     <div
       className='one-card results'
@@ -38,7 +38,7 @@ const Results = ({ itemColor, accelerons }) => {
         <div className='content-header'>
           <span>
             <p>
-              our <b style={{ color: accelerons.accentColor }}>LEGACY</b>
+              our <b style={{ color: teamData.accentColor }}>LEGACY</b>
             </p>
           </span>
         </div>
@@ -78,10 +78,10 @@ const Results = ({ itemColor, accelerons }) => {
                   className='comp-title'
                   style={{ textDecoration: 'underline' }}
                 >
-                  {accelerons.participate.firstName}
+                  {teamData.participate.firstName}
                 </div>
                 <div className='comp-data' data-aos='fade-up'>
-                  {resultData.supra}
+                  {resultData.firstComp}
                 </div>
               </div>
               <div className='comp-name'>
@@ -89,10 +89,10 @@ const Results = ({ itemColor, accelerons }) => {
                   className='comp-title'
                   style={{ textDecoration: 'underline' }}
                 >
-                  {accelerons.participate.secondName}
+                  {teamData.participate.secondName}
                 </div>
                 <div className='comp-data' data-aos='fade-up'>
-                  {resultData.fbharat}
+                  {resultData.secondComp}
                 </div>
               </div>
             </div>

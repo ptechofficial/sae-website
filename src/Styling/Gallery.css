@@ -1,0 +1,125 @@
+.gallery {
+  height: 100vh;
+}
+
+.gallery .left-side,
+.gallery .right-side {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.gallery .card-counter {
+  grid-row: 1/2;
+}
+.gallery .title-line {
+  grid-row: 2/8;
+
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+}
+.gallery .title-line .vertical-header {
+  grid-row: 1/2;
+
+  align-items: center;
+  font-size: 0.65rem;
+}
+.gallery .vertical-line {
+  grid-row: 2/6;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gallery .vertical-line .right-box {
+  border-left: 3px solid;
+}
+.gallery .vertical-line .left-box {
+  border-right: 3px solid;
+}
+.gallery .card-counter {
+  font-size: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.gallery .card-counter span {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.gallery .content {
+  grid-column: 2/6;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.gallery .content-body {
+  grid-row: 2/8;
+  background-color: white;
+  color: rgba(34, 34, 34, 1);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.gallery .content-body b {
+  font-weight: 800;
+  color: rgba(95, 95, 95, 1);
+}
+.gallery .content-body {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1000px) {
+  .gallery .card-counter {
+    font-size: 25px;
+  }
+  .gallery .content-body {
+    font-size: 17px;
+  }
+  .gallery .content-header p {
+    font-size: 35px;
+  }
+  .gallery .content {
+    grid-column: 2/7;
+    margin-right: 2rem;
+  }
+  .gallery .right-side {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .gallery .card-counter {
+    font-size: 20px;
+  }
+  .gallery .content-body {
+    font-size: 13px;
+  }
+  .gallery .content-header p {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .gallery .content-header p {
+    font-size: 27px;
+  }
+
+  .gallery .vertical-line .right-box {
+    border-left: 2px solid;
+  }
+  .gallery .vertical-line .left-box {
+    border-right: 2px solid;
+  }
+  .gallery .title-line .vertical-header {
+    font-size: 7px;
+  }
+
+  .gallery .content-body {
+    font-size: 10.5px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .gallery .content-body {
+    font-size: 9px;
+  }
+}

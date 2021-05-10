@@ -20,8 +20,8 @@ const TeamPerson = ({ personData }) => {
   );
 };
 
-const TeamMembers = ({ itemColor, accelerons }) => {
-  const peopleArray = accelerons.teamMembers;
+const TeamMembers = ({ itemColor, teamData }) => {
+  const peopleArray = teamData.teamMembers;
   return (
     <div
       className='one-card team-member'
@@ -64,7 +64,7 @@ const TeamMembers = ({ itemColor, accelerons }) => {
               meet our{' '}
               <b
                 style={{
-                  color: accelerons.accentColor,
+                  color: teamData.accentColor,
                 }}
               >
                 TEAM

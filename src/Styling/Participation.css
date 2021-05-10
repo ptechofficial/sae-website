@@ -74,27 +74,27 @@
   grid-template-columns: 1fr 2fr;
 }
 /* supra */
-.comp-details .content-body .content-supra {
+.comp-details .content-body .content-first {
   display: grid;
   grid-template-columns: 1.75fr 1fr;
   grid-template-rows: 1fr 4fr;
   line-height: 1.3;
 }
-.comp-details .supra-header {
+.comp-details .first-header {
   font-weight: 900;
   grid-column: 1/3;
   font-size: 2.5rem;
 }
-.comp-details .supra-info {
+.comp-details .first-info {
   margin-right: 0.5rem;
 }
-.comp-details .supra-point {
+.comp-details .first-point {
   margin-top: 1rem;
   padding-left: 1rem;
   /* border-left: 0.2rem solid red; */
 }
-.comp-details .supra-img,
-.fbharat-img {
+.comp-details .first-img,
+.second-img {
   margin: 0.6rem 0;
   background-color: none;
   background-position: top;
@@ -102,26 +102,26 @@
   background-size: contain;
 }
 /* fbharat */
-.comp-details .content-body .content-fbharat {
+.comp-details .content-body .content-second {
   display: grid;
   margin-top: 2rem;
   grid-template-columns: 1fr 1.75fr;
   grid-template-rows: 1fr 4fr;
   line-height: 1.3;
 }
-.comp-details .fbharat-header {
+.comp-details .second-header {
   font-weight: 900;
   grid-column: 1/3;
   font-size: 2.5rem;
 }
-.comp-details .fbharat-info {
+.comp-details .second-info {
   padding-top: 1rem;
   margin-left: 1.5rem;
   text-align: right;
   grid-column: 2/3;
   grid-row: 2/3;
 }
-.comp-details .fbharat-point {
+.comp-details .second-point {
   padding-right: 1rem;
   margin-top: 1rem;
   /* border-right: 0.2rem solid red; */
@@ -142,8 +142,8 @@
   .comp-details {
     min-height: 100vh;
   }
-  .comp-details .supra-header,
-  .comp-details .fbharat-header {
+  .comp-details .first-header,
+  .comp-details .second-header {
     font-size: 30px;
   }
   .acomp-details .card-counter {
@@ -205,8 +205,8 @@
   .comp-details .content {
     margin-right: 1rem;
   }
-  .comp-details .supra-header,
-  .comp-details .fbharat-header {
+  .comp-details .first-header,
+  .comp-details .second-header {
     font-size: 20px;
   }
 }
@@ -230,8 +230,8 @@
   .comp-details .content {
     margin-right: 1rem;
   }
-  .comp-details .supra-header,
-  .comp-details .fbharat-header {
+  .comp-details .first-header,
+  .comp-details .second-header {
     font-size: 15px;
   }
 }

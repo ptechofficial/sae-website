@@ -10,6 +10,7 @@ import AboutUs from './Components/AboutUs';
 import Participation from './Components/Participation';
 import TeamMembers from './Components/TeamMembers';
 import Results from './Components/Results';
+import Gallery from './Components/Gallery';
 import Footer from './Components/Footer';
 import PtechScroll from './Components/ptech-scroll';
 
@@ -58,10 +59,15 @@ const Accelerons = () => {
           socialColor: 'black',
           newTrans: 3,
         });
-        // setBgColor('white');
-        // setItemColor('black');
-        // setSocialColor('black');
-        // setNewTrans(3);
+      }
+      if (scrollValue > $('.gallery').position().top - 200) {
+        // console.log('results');
+        setColorValues({
+          bgColor: 'black',
+          itemColor: 'white',
+          socialColor: 'white',
+          newTrans: 4,
+        });
       }
     });
   }, []);
@@ -79,25 +85,20 @@ const Accelerons = () => {
           bgColor={colorValues.bgColor}
           itemColor={colorValues.itemColor}
           accentColor={'red'}
-          cntItems={4}
+          cntItems={5}
         />
         <Landing landing={DataAccelerons.landing} />
-        <AboutUs
-          itemColor={colorValues.itemColor}
-          accelerons={DataAccelerons}
-        />
+        <AboutUs itemColor={colorValues.itemColor} teamData={DataAccelerons} />
         <Participation
           itemColor={colorValues.itemColor}
-          accelerons={DataAccelerons}
+          teamData={DataAccelerons}
         />
         <TeamMembers
           itemColor={colorValues.itemColor}
-          accelerons={DataAccelerons}
+          teamData={DataAccelerons}
         />
-        <Results
-          itemColor={colorValues.itemColor}
-          accelerons={DataAccelerons}
-        />
+        <Results itemColor={colorValues.itemColor} teamData={DataAccelerons} />
+        <Gallery itemColor={colorValues.itemColor} />
         <Footer
           accentColor={DataAccelerons.accentColor}
           footerColors={DataAccelerons.footerColors}

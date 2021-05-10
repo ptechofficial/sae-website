@@ -16,9 +16,11 @@ const Footer = ({ accentColor, footerColors }) => {
             <span style={{ borderColor: accentColor }}>Explore Us</span>
           </div>
           <div className='footer-links'>
-            <span>Team Accelerons</span>
-            <span>Team Nitrox</span>
-            <span>Autokriti</span>
+            <span>
+              <a href='/accelerons'>Team Accelerons</a>
+            </span>
+            <a href='/nitrox'>Team Nitrox</a>
+            <a href='/autokriti'>Autokriti</a>
             <span>Support Us</span>
             <span>Gallery</span>
             <span>Sponsors</span>
@@ -32,46 +34,58 @@ const Footer = ({ accentColor, footerColors }) => {
             <span className='indv-social'>
               <span>Team Accelerons</span>
               <span className='social-logo'>
-                <i
-                  className='fab fa-instagram custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='https://www.instagram.com/accelerons_nitkkr/'>
+                  <i
+                    className='fab fa-instagram custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
               <span className='social-logo'>
-                <i
-                  className='fab fa-facebook-square custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='https://www.facebook.com/teamaccelerons'>
+                  <i
+                    className='fab fa-facebook-square custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
             </span>
             <span className='indv-social'>
               <span>Team Nitrox</span>
               <span className='social-logo'>
-                <i
-                  className='fab fa-instagram custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='https://www.instagram.com/nitroxteam/'>
+                  <i
+                    className='fab fa-instagram custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
               <span className='social-logo'>
-                <i
-                  className='fab fa-facebook-square custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='https://www.facebook.com/teamnitrox'>
+                  <i
+                    className='fab fa-facebook-square custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
             </span>
             <span className='indv-social'>
               <span>Autokriti</span>
               <span className='social-logo'>
-                <i
-                  className='fab fa-instagram custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='https://www.instagram.com/autokriti/'>
+                  <i
+                    className='fab fa-instagram custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
               <span className='social-logo'>
-                <i
-                  className='fab fa-facebook-square custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='https://www.facebook.com/autokriti'>
+                  <i
+                    className='fab fa-facebook-square custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
             </span>
           </div>
@@ -92,10 +106,12 @@ const Footer = ({ accentColor, footerColors }) => {
             </span>
             <span className='indv-contact'>
               <span className='contact-logo'>
-                <i
-                  className='far fa-envelope custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='mailto:saenitkurukshetra@gmail.com'>
+                  <i
+                    className='far fa-envelope custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
               <span className='long-contact' style={{ wordBreak: 'break-all' }}>
                 saenitkurukshetra@gmail.com
@@ -103,10 +119,12 @@ const Footer = ({ accentColor, footerColors }) => {
             </span>
             <span className='indv-contact'>
               <span className='contact-logo'>
-                <i
-                  className='fab fa-linkedin custom-icon-sizing'
-                  style={{ color: footerColors.iconColor }}
-                ></i>
+                <a href='https://www.linkedin.com/company/sae-nit-kkr/mycompany/'>
+                  <i
+                    className='fab fa-linkedin custom-icon-sizing'
+                    style={{ color: footerColors.iconColor }}
+                  ></i>
+                </a>
               </span>
               <span className='long-contact' style={{ wordBreak: 'break-all' }}>
                 linkedin.com/company/sae-nit-kkr/

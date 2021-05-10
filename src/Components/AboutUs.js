@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styling/AboutUs.css';
 
-const AboutUs = ({ itemColor, accelerons }) => {
+const AboutUs = ({ itemColor, teamData }) => {
   let contentBodyColor = 'rgba(34, 34, 34, 1)';
   if (itemColor === 'white') {
     contentBodyColor = 'rgb(131, 131, 131)';
@@ -46,7 +46,7 @@ const AboutUs = ({ itemColor, accelerons }) => {
           <span>
             <p>
               we are{' '}
-              <b style={{ color: accelerons.accentColor }}>{accelerons.name}</b>
+              <b style={{ color: teamData.accentColor }}>{teamData.name}</b>
             </p>
           </span>
         </div>
@@ -57,23 +57,23 @@ const AboutUs = ({ itemColor, accelerons }) => {
             color: contentBodyColor,
           }}
         >
-          <span>{accelerons.aboutUs.contentBody}</span>
+          <span>{teamData.aboutUs.contentBody}</span>
           <span
             className='comp-names'
-            style={{ borderLeft: '0.2rem solid ' + accelerons.accentColor }}
+            style={{ borderLeft: '0.2rem solid ' + teamData.accentColor }}
           >
             <span className='first-comp'>
               {' '}
-              {accelerons.aboutUs.competitiions.first}{' '}
+              {teamData.aboutUs.competitiions.first}{' '}
             </span>
             <span className='second-comp'>
               {' '}
-              {accelerons.aboutUs.competitiions.second}{' '}
+              {teamData.aboutUs.competitiions.second}{' '}
             </span>
           </span>
           <img
             data-aos='fade-in'
-            src={accelerons.aboutUs.imgSrc}
+            src={teamData.aboutUs.imgSrc}
             alt=''
             className='team-car-img'
           />

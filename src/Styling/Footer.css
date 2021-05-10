@@ -1,8 +1,4 @@
-.footerArea * {
-  /* border: 1px solid black; */
-}
 .footerArea {
-  /* border: 1px solid black; */
   height: 40vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -92,6 +88,9 @@
   width: 40%;
   padding: 0 20px;
 }
+.news-letter-inp input:focus {
+  outline: none;
+}
 .news-letter-inp button {
   font-family: Montserrat;
   border: none;
@@ -101,6 +100,9 @@
   font-size: 16px;
   width: 15%;
   font-weight: 600;
+}
+.news-letter-inp button:active {
+  transform: scale(0.98);
 }
 
 .news-letter-checkbox {
@@ -139,6 +141,7 @@
   .foot-section .footer-links {
     font-size: 8px;
   }
+
   .news-letter-checkbox p {
     font-size: 7px;
     padding: 0 5px;
