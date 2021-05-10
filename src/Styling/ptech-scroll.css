@@ -21,14 +21,12 @@
   height: 4px;
   width: 4px;
   transform: translateX(-1.5px);
-  /* background-color: black; */
 }
 
 .progress-bar {
-  transition: 500ms;
+  transition: 400ms;
   transition-timing-function: ease-in-out;
   height: 50px;
-  /* background: black; */
   width: 5px;
   transform: translate(-2px, 0);
   position: relative;
@@ -36,8 +34,12 @@
 
 .progress-num {
   position: absolute;
-  transition: 500ms;
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
+}
+@media only screen and (max-width: 1000px) {
+  .scroll-area {
+    display: none;
+  }
 }

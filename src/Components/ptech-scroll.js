@@ -39,6 +39,7 @@ const PtechScroll = ({
               return (
                 <div
                   className='possible-progress'
+                  key={index}
                   style={{
                     transform: `translate(-1.5px,${trans}px)`,
                     backgroundColor: bgScroll,

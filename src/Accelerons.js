@@ -14,124 +14,97 @@ import Footer from './Components/Footer';
 import PtechScroll from './Components/ptech-scroll';
 
 const Accelerons = () => {
-  const [bgColor, setBgColor] = useState('white');
-  const [itemColor, setItemColor] = useState('black');
-  const [socialColor, setSocialColor] = useState('white');
-  const [newTrans, setNewTrans] = useState(0);
+  const [colorValues, setColorValues] = useState({
+    bgColor: 'white',
+    itemColor: 'black',
+    socialColor: 'white',
+    newTrans: 0,
+  });
   useEffect(() => {
     $(window).on('scroll touchmove', function () {
       let scrollValue = $(document).scrollTop();
       if (scrollValue < $('.about-us').position().top - 200) {
-        setSocialColor('white');
+        setColorValues({ ...colorValues, socialColor: 'white' });
       }
       if (scrollValue >= $('.about-us').position().top - 200) {
-        // console.log('about-us');
-        setBgColor('white');
-        setItemColor('black');
-        setSocialColor('black');
-        setNewTrans(0);
+        setColorValues({
+          bgColor: 'white',
+          itemColor: 'black',
+          socialColor: 'black',
+          newTrans: 0,
+        });
       }
       if (scrollValue > $('.comp-details').position().top - 200) {
-        // console.log('comp-details');
-        setBgColor('white');
-        setItemColor('black');
-        setSocialColor('black');
-        setNewTrans(1);
+        setColorValues({
+          bgColor: 'white',
+          itemColor: 'black',
+          socialColor: 'black',
+          newTrans: 1,
+        });
       }
       if (scrollValue > $('.team-member').position().top - 200) {
-        // console.log('team-member');
-        setBgColor('black');
-        setItemColor('white');
-        setSocialColor('white');
-        setNewTrans(2);
+        setColorValues({
+          bgColor: 'black',
+          itemColor: 'white',
+          socialColor: 'white',
+          newTrans: 2,
+        });
       }
       if (scrollValue > $('.results').position().top - 200) {
         // console.log('results');
-        setBgColor('white');
-        setItemColor('black');
-        setSocialColor('black');
-        setNewTrans(3);
+        setColorValues({
+          bgColor: 'white',
+          itemColor: 'black',
+          socialColor: 'black',
+          newTrans: 3,
+        });
+        // setBgColor('white');
+        // setItemColor('black');
+        // setSocialColor('black');
+        // setNewTrans(3);
       }
     });
   }, []);
 
   return (
-    <article
-      style={{
-        backgroundColor: bgColor,
-      }}
-    >
-      <Overlay socialColor={socialColor} />
-      <PtechScroll
-        newTrans={newTrans}
-        bgColor={bgColor}
-        itemColor={itemColor}
-        accentColor={'red'}
-        cntItems={4}
-      />
-      <Landing landing={DataAccelerons.landing} />
-      <AboutUs itemColor={itemColor} accelerons={DataAccelerons} />
-      <Participation itemColor={itemColor} accelerons={DataAccelerons} />
-      <TeamMembers itemColor={itemColor} accelerons={DataAccelerons} />
-      <Results itemColor={itemColor} accelerons={DataAccelerons} />
-      <Footer
-        accentColor={DataAccelerons.accentColor}
-        footerColors={DataAccelerons.footerColors}
-      />
-    </article>
+    <>
+      <article
+        style={{
+          backgroundColor: colorValues.bgColor,
+        }}
+      >
+        <Overlay socialColor={colorValues.socialColor} />
+        <PtechScroll
+          newTrans={colorValues.newTrans}
+          bgColor={colorValues.bgColor}
+          itemColor={colorValues.itemColor}
+          accentColor={'red'}
+          cntItems={4}
+        />
+        <Landing landing={DataAccelerons.landing} />
+        <AboutUs
+          itemColor={colorValues.itemColor}
+          accelerons={DataAccelerons}
+        />
+        <Participation
+          itemColor={colorValues.itemColor}
+          accelerons={DataAccelerons}
+        />
+        <TeamMembers
+          itemColor={colorValues.itemColor}
+          accelerons={DataAccelerons}
+        />
+        <Results
+          itemColor={colorValues.itemColor}
+          accelerons={DataAccelerons}
+        />
+        <Footer
+          accentColor={DataAccelerons.accentColor}
+          footerColors={DataAccelerons.footerColors}
+        />
+      </article>
+    </>
   );
 };
-// let bgColor = 'white';
-// let itemColor = 'black';
-// const UpdateColors = ({ newBgColor }) => {
-//   const [newRender, setNewRender] = useState(bgColor);
-//   if (bgColor !== newBgColor) {
-//     bgColor = newBgColor;
-//     if (bgColor === 'black') {
-//       itemColor = 'white';
-//     } else {
-//       itemColor = 'black';
-//     }
-//     console.log('newRender');
-//     setNewRender(bgColor);
-//   }
-//   return;
-// };
-// };
-// const [bgColor, setBgColor] = useState('black');
-// class Accelerons extends Component {
-//   constructor(props) {
-//     super(props);
-//   }
-//   componentDidMount = () => {
-//     $(window).on('scroll touchmove', function () {
-//       if ($(document).scrollTop() >= $('.about-us').position().top) {
-//         setBgColor('red');
-//       }
 
-//     });
-//   };
-//   render() {
-//     // const [bgColor, setBgColor] = useState('black');
-//     // const [itemColor, setItemColor] = useState('white');
-//     return (
-//       <article
-//         style={{
-//           backgroundColor: bgColor,
-//         }}
-//       >
-//         <Overlay />
-//         <Landing landing={DataAccelerons.landing} />
-//         <AboutUs itemColor={itemColor} accelerons={DataAccelerons} />
-//         <Participation itemColor={itemColor} accelerons={DataAccelerons} />
-//         <TeamMembers itemColor={itemColor} accelerons={DataAccelerons} />
-//         <Results itemColor={itemColor} accelerons={DataAccelerons} />
-//         <Footer
-//           accentColor={DataAccelerons.accentColor}
-//           footerColors={DataAccelerons.footerColors}
-//         />
-//       </article>
-//     );
-//   }
-// }
 export default Accelerons;
