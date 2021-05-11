@@ -5,8 +5,8 @@ const DataTeam = {
   textColor: 'black',
   landing: {
     front:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Nitrox_front.png?raw=true',
-    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Nitrox_back.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Nitrox_front.png?raw=true',
+    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Nitrox_back.png?raw=true',
     widthFull: {
       top: '150',
       left: '450',
@@ -36,7 +36,7 @@ const DataTeam = {
     name: 'aboutus',
 
     imgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/car_Nitrox.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/About%20Us/car_Nitrox.png?raw=true',
     contentBody: (
       <p>
         <b>TEAM NITROX</b> s a group of junkies with a shared objective to
@@ -60,7 +60,7 @@ const DataTeam = {
   participate: {
     firstName: 'BAJA SAE',
     firstImgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/supra.jpg?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Participate/baja.png?raw=true',
     firstInfo_main: (
       <p>
         Baja SAE is an Collegiate Design Series competition run by the Society
@@ -79,7 +79,7 @@ const DataTeam = {
     ),
     secondName: 'ATVC',
     secondImgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/fbharat.jpg?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Participate/baja.png?raw=true',
     secondInfo_main: (
       <p>
         The Third season of Aravalli Terrain Vehicle Championship, powered by
@@ -203,21 +203,21 @@ const DataTeam = {
     {
       year: '2020',
       img_src:
-        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+        'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Results/nitrox_2020.JPG?raw=true',
       firstComp: 'Here will go the results for SUPRA for the year 2020',
       secondComp: 'Here goes the results for Formula Bharat for the year 2020',
     },
     {
       year: '2019',
       img_src:
-        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+        'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Results/nitrox_2019.JPG?raw=true',
       firstComp: 'Here will go the results for SUPRA for the year 2019',
       secondComp: 'Here goes the results for Formula Bharat for the year 2019',
     },
     {
       year: '2018',
       img_src:
-        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+        'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Results/nitrox_2018.JPG?raw=true',
       firstComp: 'Here will go the results for SUPRA for the year 2018',
       secondComp: 'Here goes the results for Formula Bharat for the year 2018',
     },

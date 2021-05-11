@@ -5,8 +5,8 @@ const DataAccelerons = {
   textColor: 'black',
   landing: {
     front:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Accelerons_front.png?raw=true',
-    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Accelerons_back.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Accelerons_front.png?raw=true',
+    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Accelerons_back.png?raw=true',
     widthFull: {
       top: '270',
       left: '400',
@@ -36,7 +36,7 @@ const DataAccelerons = {
     name: 'aboutus',
 
     imgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/car_Accelerons.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/About%20Us/car_Accelerons.png?raw=true',
     contentBody: (
       <p>
         <b>TEAM ACCELERONS</b> is a student-led engineering team of SAE NIT
@@ -64,7 +64,7 @@ const DataAccelerons = {
   participate: {
     firstName: 'SUPRA',
     firstImgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/supra.jpg?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Participate/supra.jpg?raw=true',
     firstInfo_main: (
       <p>
         SUPRA SAEINDIA Student Formula is a national engineering design
@@ -83,7 +83,7 @@ const DataAccelerons = {
     ),
     secondName: 'FORMULA BHARAT',
     secondImgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/fbharat.jpg?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Participate/fbharat.jpg?raw=true',
     secondInfo_main: (
       <p>
         Formula Bharat is an engineering design competition in which students
@@ -208,21 +208,21 @@ const DataAccelerons = {
     {
       year: '2020',
       img_src:
-        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+        'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Results/accelerons_2020.jpeg?raw=true',
       firstComp: 'Here will go the results for SUPRA for the year 2020',
       secondComp: 'Here goes the results for Formula Bharat for the year 2020',
     },
     {
       year: '2019',
       img_src:
-        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+        'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Results/accelerons_2019.JPG?raw=true',
       firstComp: 'Here will go the results for SUPRA for the year 2019',
       secondComp: 'Here goes the results for Formula Bharat for the year 2019',
     },
     {
       year: '2018',
       img_src:
-        'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+        'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Results/accelerons_2018.JPG?raw=true',
       firstComp: 'Here will go the results for SUPRA for the year 2018',
       secondComp: 'Here goes the results for Formula Bharat for the year 2018',
     },

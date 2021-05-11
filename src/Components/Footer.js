@@ -1,7 +1,12 @@
 import React from 'react';
 import '../Styling/Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ accentColor, footerColors }) => {
+  const footLinkStyles = {
+    color: footerColors.textColor,
+    textDecoration: 'none',
+  };
   return (
     <section
       className='footerArea'
@@ -17,10 +22,16 @@ const Footer = ({ accentColor, footerColors }) => {
           </div>
           <div className='footer-links'>
             <span>
-              <a href='/accelerons'>Team Accelerons</a>
+              <Link to='/accelerons' style={footLinkStyles}>
+                Team Accelerons
+              </Link>
             </span>
-            <a href='/nitrox'>Team Nitrox</a>
-            <a href='/autokriti'>Autokriti</a>
+            <Link to='/nitrox' style={footLinkStyles}>
+              Team Nitrox
+            </Link>
+            <Link to='/autokriti' style={footLinkStyles}>
+              Autokriti
+            </Link>
             <span>Support Us</span>
             <span>Gallery</span>
             <span>Sponsors</span>
