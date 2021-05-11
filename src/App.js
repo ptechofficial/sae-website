@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Accelerons from './Accelerons';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Accelerons from './Accelerons';
+import Nitrox from './Nitrox';
 
 const App = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <>
       <Accelerons />
+      {/* <Nitrox /> */}
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Accelerons.css';
-import DataTeam from './data-object-file/nitrox-data';
+import DataTeam from './data-object-file/accelerons-data';
 import $ from 'jquery';
 
 // Importing Components
@@ -26,7 +26,7 @@ const Accelerons = () => {
       let scrollValue = $(document).scrollTop();
 
       if (scrollValue >= $('.gallery').position().top - 200) {
-        console.log('gallery');
+        // console.log('gallery');
         setColorValues({
           bgColor: 'black',
           itemColor: 'white',

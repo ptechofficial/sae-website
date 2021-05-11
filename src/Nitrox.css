@@ -1,0 +1,4 @@
+article {
+  transition: all 500ms;
+  will-change: background;
+}

@@ -5,14 +5,13 @@ const DataTeam = {
   textColor: 'black',
   landing: {
     front:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingAccelerons_front.png?raw=true',
-    back:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingAccelerons_back.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingNitrox_front.png?raw=true',
+    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingNitrox_back.png?raw=true',
     widthFull: {
-      top: '240',
-      left: '350',
-      fontHead1: '63px',
-      fontHead2: '163px',
+      top: '150',
+      left: '450',
+      fontHead1: '72px',
+      fontHead2: '258px',
     },
     width1000: {
       top: '260',
