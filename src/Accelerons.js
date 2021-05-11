@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Accelerons.css';
-import DataAccelerons from './data-object-file/accelerons-data';
+import DataTeam from './data-object-file/nitrox-data';
 import $ from 'jquery';
 
 // Importing Components
@@ -24,34 +24,16 @@ const Accelerons = () => {
   useEffect(() => {
     $(window).on('scroll touchmove', function () {
       let scrollValue = $(document).scrollTop();
-      if (scrollValue < $('.about-us').position().top - 200) {
-        setColorValues({ ...colorValues, socialColor: 'white' });
-      }
-      if (scrollValue >= $('.about-us').position().top - 200) {
-        setColorValues({
-          bgColor: 'white',
-          itemColor: 'black',
-          socialColor: 'black',
-          newTrans: 0,
-        });
-      }
-      if (scrollValue > $('.comp-details').position().top - 200) {
-        setColorValues({
-          bgColor: 'white',
-          itemColor: 'black',
-          socialColor: 'black',
-          newTrans: 1,
-        });
-      }
-      if (scrollValue > $('.team-member').position().top - 200) {
+
+      if (scrollValue >= $('.gallery').position().top - 200) {
+        console.log('gallery');
         setColorValues({
           bgColor: 'black',
           itemColor: 'white',
           socialColor: 'white',
-          newTrans: 2,
+          newTrans: 4,
         });
-      }
-      if (scrollValue > $('.results').position().top - 200) {
+      } else if (scrollValue >= $('.results').position().top - 200) {
         // console.log('results');
         setColorValues({
           bgColor: 'white',
@@ -59,14 +41,37 @@ const Accelerons = () => {
           socialColor: 'black',
           newTrans: 3,
         });
-      }
-      if (scrollValue > $('.gallery').position().top - 200) {
-        // console.log('results');
+      } else if (scrollValue >= $('.team-member').position().top - 200) {
+        // console.log('team member');
         setColorValues({
           bgColor: 'black',
           itemColor: 'white',
           socialColor: 'white',
-          newTrans: 4,
+          newTrans: 2,
+        });
+      } else if (scrollValue >= $('.comp-details').position().top - 200) {
+        // console.log('comp details');
+        setColorValues({
+          bgColor: 'white',
+          itemColor: 'black',
+          socialColor: 'black',
+          newTrans: 1,
+        });
+      } else if (scrollValue >= $('.about-us').position().top - 200) {
+        // console.log('about us');
+        setColorValues({
+          bgColor: 'white',
+          itemColor: 'black',
+          socialColor: 'black',
+          newTrans: 0,
+        });
+      } else if (scrollValue < $('.about-us').position().top - 200) {
+        // console.log('landing');
+        setColorValues({
+          bgColor: 'white',
+          itemColor: 'black',
+          socialColor: 'white',
+          newTrans: 0,
         });
       }
     });
@@ -84,24 +89,18 @@ const Accelerons = () => {
           newTrans={colorValues.newTrans}
           bgColor={colorValues.bgColor}
           itemColor={colorValues.itemColor}
-          accentColor={'red'}
+          accentColor={DataTeam.accentColor}
           cntItems={5}
         />
-        <Landing landing={DataAccelerons.landing} />
-        <AboutUs itemColor={colorValues.itemColor} teamData={DataAccelerons} />
-        <Participation
-          itemColor={colorValues.itemColor}
-          teamData={DataAccelerons}
-        />
-        <TeamMembers
-          itemColor={colorValues.itemColor}
-          teamData={DataAccelerons}
-        />
-        <Results itemColor={colorValues.itemColor} teamData={DataAccelerons} />
+        <Landing landing={DataTeam.landing} teamName={DataTeam.name} />
+        <AboutUs itemColor={colorValues.itemColor} teamData={DataTeam} />
+        <Participation itemColor={colorValues.itemColor} teamData={DataTeam} />
+        <TeamMembers itemColor={colorValues.itemColor} teamData={DataTeam} />
+        <Results itemColor={colorValues.itemColor} teamData={DataTeam} />
         <Gallery itemColor={colorValues.itemColor} />
         <Footer
-          accentColor={DataAccelerons.accentColor}
-          footerColors={DataAccelerons.footerColors}
+          accentColor={DataTeam.accentColor}
+          footerColors={DataTeam.footerColors}
         />
       </article>
     </>

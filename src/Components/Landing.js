@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../Styling/Landing.css';
 import useWindowSize from './use-window-size';
 
-const Landing = ({ landing }) => {
+const Landing = ({ landing, teamName }) => {
   const size = useWindowSize();
   const [respProp, setRespProp] = useState(landing.widthFull);
   useEffect(() => {
@@ -42,6 +42,8 @@ const Landing = ({ landing }) => {
           style={{
             top: respProp.top + 'px',
             left: respProp.left + 'px',
+            // top: '13em',
+            // left: '20em',
           }}
           data-aos='fade-up'
         >
@@ -60,7 +62,7 @@ const Landing = ({ landing }) => {
               fontSize: respProp.fontHead2,
             }}
           >
-            Accelerons
+            {teamName}
           </span>
         </div>
         <div className='arrow bounce'>

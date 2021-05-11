@@ -1,5 +1,5 @@
 const DataAccelerons = {
-  name: 'ACCELERONS',
+  name: 'Accelerons',
   accentColor: 'red',
 
   textColor: 'black',
@@ -11,8 +11,8 @@ const DataAccelerons = {
     widthFull: {
       top: '240',
       left: '350',
-      fontHead1: '73px',
-      fontHead2: '183px',
+      fontHead1: '63px',
+      fontHead2: '163px',
     },
     width1000: {
       top: '260',

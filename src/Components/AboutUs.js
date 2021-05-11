@@ -46,7 +46,9 @@ const AboutUs = ({ itemColor, teamData }) => {
           <span>
             <p>
               we are{' '}
-              <b style={{ color: teamData.accentColor }}>{teamData.name}</b>
+              <b style={{ color: teamData.accentColor }}>
+                {teamData.name.toUpperCase()}
+              </b>
             </p>
           </span>
         </div>
