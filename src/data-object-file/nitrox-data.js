@@ -5,8 +5,8 @@ const DataTeam = {
   textColor: 'black',
   landing: {
     front:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingNitrox_front.png?raw=true',
-    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingNitrox_back.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Nitrox_front.png?raw=true',
+    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Nitrox_back.png?raw=true',
     widthFull: {
       top: '150',
       left: '450',
@@ -14,22 +14,22 @@ const DataTeam = {
       fontHead2: '258px',
     },
     width1000: {
-      top: '260',
-      left: '270',
-      fontHead1: '50px',
-      fontHead2: '113px',
+      top: '200',
+      left: '350',
+      fontHead1: '60px',
+      fontHead2: '173px',
     },
     width700: {
-      top: '240',
-      left: '160',
-      fontHead1: '35px',
-      fontHead2: '70px',
+      top: '200',
+      left: '240',
+      fontHead1: '45px',
+      fontHead2: '110px',
     },
     width400: {
       top: '90',
-      left: '50',
-      fontHead1: '25px',
-      fontHead2: '50px',
+      left: '150',
+      fontHead1: '35px',
+      fontHead2: '70px',
     },
   },
   aboutUs: {

@@ -5,11 +5,11 @@ const DataAccelerons = {
   textColor: 'black',
   landing: {
     front:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingAccelerons_front.png?raw=true',
-    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landingAccelerons_back.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Accelerons_front.png?raw=true',
+    back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/landing_Accelerons_back.png?raw=true',
     widthFull: {
-      top: '240',
-      left: '350',
+      top: '270',
+      left: '400',
       fontHead1: '63px',
       fontHead2: '163px',
     },
