@@ -36,7 +36,7 @@ const DataAccelerons = {
     name: 'aboutus',
 
     imgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/only%20car.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/car_Accelerons.png?raw=true',
     contentBody: (
       <p>
         <b>TEAM ACCELERONS</b> is a student-led engineering team of SAE NIT

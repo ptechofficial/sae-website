@@ -36,7 +36,7 @@ const DataTeam = {
     name: 'aboutus',
 
     imgSrc:
-      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/only%20car.png?raw=true',
+      'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/car_Nitrox.png?raw=true',
     contentBody: (
       <p>
         <b>TEAM NITROX</b> s a group of junkies with a shared objective to
