@@ -72,19 +72,18 @@ const Landing = ({ landing, teamName }) => {
       <script>
         {
           (window.onscroll = () => {
-            let pos = window.scrollY;
-            if (size.width > 400) {
-              document.querySelector('.landing-text').style.left = `${
-                parseInt(respProp.left) + pos / 3
-              }px`;
-            } else {
-              document.querySelector('.landing-text').style.top = `${
-                parseInt(respProp.top) + pos / 3
-              }px`;
+            let LandingText = document.querySelector('.landing-text');
+            if (LandingText) {
+              let pos = window.scrollY;
+              if (size.width > 400) {
+                LandingText.style.left = `${
+                  parseInt(respProp.left) + pos / 3
+                }px`;
+              } else {
+                LandingText.style.top = `${parseInt(respProp.top) + pos / 3}px`;
+              }
+              LandingText.style.opacity = `${1 - pos / 900}`;
             }
-            document.querySelector('.landing-text').style.opacity = `${
-              1 - pos / 900
-            }`;
           })
         }
       </script>

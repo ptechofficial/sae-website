@@ -25,7 +25,10 @@ const Nitrox = () => {
     $(window).on('scroll touchmove', function () {
       let scrollValue = $(document).scrollTop();
 
-      if (scrollValue >= $('.gallery').position().top - 200) {
+      if (
+        document.querySelector('.gallery') &&
+        scrollValue >= $('.gallery').position().top - 200
+      ) {
         // console.log('gallery');
         setColorValues({
           bgColor: 'black',
@@ -33,7 +36,10 @@ const Nitrox = () => {
           socialColor: 'white',
           newTrans: 4,
         });
-      } else if (scrollValue >= $('.results').position().top - 200) {
+      } else if (
+        document.querySelector('.results') &&
+        scrollValue >= $('.results').position().top - 200
+      ) {
         // console.log('results');
         setColorValues({
           bgColor: 'white',
@@ -41,7 +47,10 @@ const Nitrox = () => {
           socialColor: 'black',
           newTrans: 3,
         });
-      } else if (scrollValue >= $('.team-member').position().top - 200) {
+      } else if (
+        document.querySelector('.team-member') &&
+        scrollValue >= $('.team-member').position().top - 200
+      ) {
         // console.log('team member');
         setColorValues({
           bgColor: 'black',
@@ -49,7 +58,10 @@ const Nitrox = () => {
           socialColor: 'white',
           newTrans: 2,
         });
-      } else if (scrollValue >= $('.comp-details').position().top - 200) {
+      } else if (
+        document.querySelector('.comp-details') &&
+        scrollValue >= $('.comp-details').position().top - 200
+      ) {
         // console.log('comp details');
         setColorValues({
           bgColor: 'white',
@@ -57,7 +69,10 @@ const Nitrox = () => {
           socialColor: 'black',
           newTrans: 1,
         });
-      } else if (scrollValue >= $('.about-us').position().top - 200) {
+      } else if (
+        document.querySelector('.about-us') &&
+        scrollValue >= $('.about-us').position().top - 200
+      ) {
         // console.log('about us');
         setColorValues({
           bgColor: 'white',
@@ -65,7 +80,10 @@ const Nitrox = () => {
           socialColor: 'black',
           newTrans: 0,
         });
-      } else if (scrollValue < $('.about-us').position().top - 200) {
+      } else if (
+        document.querySelector('.about-us') &&
+        scrollValue < $('.about-us').position().top - 200
+      ) {
         // console.log('landing');
         setColorValues({
           bgColor: 'white',
