@@ -1,0 +1,47 @@
+.box {
+  width: 880px;
+  height: 330px;
+  border-radius: 0.5em;
+}
+.sunrise {
+  position: absolute; /* remove from flow so sunset is placed on top */
+
+  background: url('https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Accelerons_back.png?raw=true')
+    no-repeat;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.slider {
+  /* set initial width */
+  width: 520px;
+
+  /* hide the content that overflows (to allow second box to show through) */
+  overflow: hidden;
+  display: inline-block;
+
+  /* skew container so that it has angled edge, and set up transition */
+  transform: skewX(-20deg);
+  transition: width 1.2s ease-in-out;
+}
+.sunset {
+  /* skew back by negative of parent’s skew so contents is upright */
+  transform: skewX(20deg);
+  margin-left: 76px; /* give margin to push content away from left slanted edge */
+  background: url('https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Accelerons_back.png?raw=true')
+    no-repeat;
+  pointer-events: auto; /* allow pointer events for the box */
+}
+.slider {
+  /* give negative margin to remove gap caused by left hand skew */
+  margin-left: -76px;
+
+  /* hide pointer events for unseen content */
+  pointer-events: none;
+}
+
+.slider:hover {
+  width: 760px;
+}
+
+.sunrise:hover + .slider {
+  width: 250px;
+}
