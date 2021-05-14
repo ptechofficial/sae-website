@@ -1,0 +1,157 @@
+/* CSS for AboutUs */
+.home-about-us {
+  height: 100vh;
+  /* color: cornflowerblue; */
+}
+.home-about-us * {
+  /* border: 1px solid black; */
+  z-index: 1;
+  box-sizing: border-box;
+}
+.home-about-us .content {
+  grid-column: 2/6;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: 1fr 1fr;
+  /* border: solid 1px black; */
+}
+.home-about-us .content > * {
+  /* border: 1px solid black; */
+
+  padding: 0.5em;
+}
+.home-about-us .content .image-area {
+  background: lightgray;
+  margin: 1em;
+  grid-row: 2/8;
+}
+.home-about-us .content .content-body {
+  grid-row: 2/8;
+  grid-column: 2/3;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+.home-about-us .content-header p {
+  font-size: 2.5rem;
+}
+.home-about-us .content-header p b {
+  font-weight: 800;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 224, 255, 1),
+    rgba(0, 133, 255, 1)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-about-us .content .content-data {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+.home-about-us .content .comp-names ul {
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(
+    to bottom,
+    rgba(0, 224, 255, 1),
+    rgba(0, 133, 255, 1)
+  );
+  border-image-slice: 1;
+
+  padding-left: 1em;
+  list-style: none;
+}
+.home-about-us .left-side,
+.home-about-us .right-side {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.home-about-us .title-line {
+  grid-row: 3/7;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+.home-about-us .title-line .vertical-header {
+  grid-row: 1/2;
+
+  align-items: center;
+  font-size: 0.65rem;
+}
+.home-about-us .vertical-line {
+  grid-row: 2/5;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.home-about-us .vertical-line .right-box {
+  border-left: 3px solid transparent;
+
+  border-image: linear-gradient(
+    to bottom,
+    rgba(0, 224, 255, 1),
+    rgba(0, 133, 255, 1)
+  );
+  border-image-slice: 1;
+}
+.home-about-us .vertical-line .left-box {
+  border-right: 3px solid transparent;
+
+  border-image: linear-gradient(
+    to bottom,
+    rgba(0, 224, 255, 1),
+    rgba(0, 133, 255, 1)
+  );
+  border-image-slice: 1;
+}
+.home-about-us .card-counter {
+  grid-row: 1/2;
+  font-size: 1.75rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.home-about-us .card-counter span {
+  grid-column: 2/4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1100px) {
+  .home-about-us .card-counter {
+    font-size: 25px;
+  }
+  .home-about-us .right-side {
+    display: none;
+  }
+}
+/* Tablets */
+@media only screen and (max-width: 700px) {
+  .home-about-us .card-counter {
+    font-size: 20px;
+  }
+}
+/* mobile */
+@media only screen and (max-width: 500px) {
+  .home-about-us .content-header p {
+    font-size: 27px;
+  }
+
+  .home-about-us .left-side {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .home-about-us .vertical-line .right-box {
+    border-left: 2px solid;
+  }
+  .home-about-us .vertical-line .left-box {
+    border-right: 2px solid;
+  }
+  .home-about-us .title-line .vertical-header {
+    font-size: 7px;
+  }
+}
+@media only screen and (max-width: 350px) {
+}

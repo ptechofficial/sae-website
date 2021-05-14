@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../Styling/Landing.css';
 import useWindowSize from './use-window-size';
 
-const HomeLanding = ({ landing, teamName }) => {
+const HomeLanding = ({ landing }) => {
   const size = useWindowSize();
   const [respProp, setRespProp] = useState(landing.widthFull);
   useEffect(() => {
@@ -53,8 +53,7 @@ const HomeLanding = ({ landing, teamName }) => {
               fontSize: respProp.fontHead1,
             }}
           >
-            {' '}
-            Team{' '}
+            SAE
           </span>
           <span
             className='head2'
@@ -62,7 +61,7 @@ const HomeLanding = ({ landing, teamName }) => {
               fontSize: respProp.fontHead2,
             }}
           >
-            {teamName}
+            NIT Kurukshetra
           </span>
         </div>
         <div className='arrow bounce'>

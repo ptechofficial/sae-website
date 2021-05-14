@@ -23,6 +23,10 @@ const Landing = ({ landing, teamName }) => {
     landing.width700,
     landing.width400,
   ]);
+  let lineHt_var = '1';
+  if (landing.landingText.text1 === 'Team') {
+    lineHt_var = '0.5';
+  }
   return (
     <>
       <section
@@ -51,10 +55,11 @@ const Landing = ({ landing, teamName }) => {
             className='head1'
             style={{
               fontSize: respProp.fontHead1,
+              lineHeight: lineHt_var,
             }}
           >
             {' '}
-            Team{' '}
+            {landing.landingText.text1}{' '}
           </span>
           <span
             className='head2'
@@ -62,7 +67,7 @@ const Landing = ({ landing, teamName }) => {
               fontSize: respProp.fontHead2,
             }}
           >
-            {teamName}
+            {landing.landingText.text2}
           </span>
         </div>
         <div className='arrow bounce'>

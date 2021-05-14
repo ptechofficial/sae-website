@@ -1,7 +1,8 @@
 .footerArea {
-  height: 40vh;
+  min-height: 40vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  /* border: 1px solid black; */
 }
 
 .footerArea * {
@@ -156,7 +157,7 @@
 /* Tablets */
 @media only screen and (max-width: 700px) {
   .footerArea {
-    height: 30vh;
+    min-height: 30vh;
   }
   .footerContent {
     margin: 0 0 0 20px;

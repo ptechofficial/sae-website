@@ -4,6 +4,10 @@ const DataTeam = {
 
   textColor: 'black',
   landing: {
+    landingText: {
+      text1: 'Team',
+      text2: 'Nitrox',
+    },
     front:
       'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Nitrox_front.png?raw=true',
     back: 'https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Landing/landing_Nitrox_back.png?raw=true',
