@@ -2,7 +2,11 @@ import React from 'react';
 import '../Styling/Footer.css';
 import { Link } from 'react-router-dom';
 
-const Footer = ({ accentColor, footerColors }) => {
+const Footer = ({ accentColor1, accentColor2, footerColors }) => {
+  const borderStyles = {
+    borderImage: `linear-gradient(to right, ${accentColor1}, ${accentColor2})`,
+    borderImageSlice: 1,
+  };
   const footLinkStyles = {
     color: footerColors.textColor,
     textDecoration: 'none',
@@ -18,7 +22,7 @@ const Footer = ({ accentColor, footerColors }) => {
       <div className='footerContent'>
         <div className='explore-us foot-section'>
           <div className='heading'>
-            <span style={{ borderColor: accentColor }}>Explore Us</span>
+            <span style={borderStyles}>Explore Us</span>
           </div>
           <div className='footer-links'>
             <span>
@@ -39,7 +43,7 @@ const Footer = ({ accentColor, footerColors }) => {
         </div>
         <div className='social-link foot-section'>
           <div className='heading'>
-            <span style={{ borderColor: accentColor }}>Social</span>
+            <span style={borderStyles}>Social</span>
           </div>
           <div className='footer-links'>
             <span className='indv-social'>
@@ -103,7 +107,7 @@ const Footer = ({ accentColor, footerColors }) => {
         </div>
         <div className='contact-us foot-section'>
           <div className='heading'>
-            <span style={{ borderColor: accentColor }}>Contact Us</span>
+            <span style={borderStyles}>Contact Us</span>
           </div>
           <div className='footer-links'>
             <span className='indv-contact'>
@@ -145,9 +149,7 @@ const Footer = ({ accentColor, footerColors }) => {
         </div>
         <div className='news-letter foot-section'>
           <div className='heading'>
-            <span style={{ borderColor: accentColor }}>
-              Join Our Newsletter
-            </span>
+            <span style={borderStyles}>Join Our Newsletter</span>
           </div>
           <div className='footer-links news-letter-area'>
             <span className='news-letter-inp'>
@@ -156,10 +158,20 @@ const Footer = ({ accentColor, footerColors }) => {
                 style={{ backgroundColor: footerColors.inpBgColor }}
                 placeholder='Enter your email... '
               />
-              <button style={{ backgroundColor: accentColor }}>Join</button>
+              <button
+                style={{
+                  backgroundImage: `linear-gradient(to right, ${accentColor1}, ${accentColor2})`,
+                }}
+              >
+                Join
+              </button>
             </span>
             <span className='news-letter-checkbox'>
-              <input type='checkbox' className='check-box' />
+              <input
+                style={{ color: footerColors.textColor }}
+                type='checkbox'
+                className='check-box'
+              />
               <p style={{ color: footerColors.chkBoxColor }}>
                 Yes, I’d like to hear about your updates on my email
               </p>

@@ -107,7 +107,8 @@ const Nitrox = () => {
           newTrans={colorValues.newTrans}
           bgColor={colorValues.bgColor}
           itemColor={colorValues.itemColor}
-          accentColor={DataTeam.accentColor}
+          accentColor1={DataTeam.accentColor}
+          accentColor2={DataTeam.accentColor_alt}
           cntItems={5}
         />
         <Landing landing={DataTeam.landing} teamName={DataTeam.name} />
@@ -117,7 +118,8 @@ const Nitrox = () => {
         <Results itemColor={colorValues.itemColor} teamData={DataTeam} />
         <Gallery itemColor={colorValues.itemColor} />
         <Footer
-          accentColor={DataTeam.accentColor}
+          accentColor1={DataTeam.accentColor}
+          accentColor2={DataTeam.accentColor_alt}
           footerColors={DataTeam.footerColors}
         />
       </article>

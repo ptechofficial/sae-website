@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import Accelerons from './Accelerons';
 import Nitrox from './Nitrox';
+import Error404 from './Components/error404';
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
           {/* <Accelerons /> */}
           <Route path='/nitrox' component={Nitrox} />
           {/* <Nitrox /> */}
+          <Route component={Error404} />
         </Switch>
       </>
     </Router>

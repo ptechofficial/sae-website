@@ -1,7 +1,8 @@
 const DataHome = {
   index: '1',
   name: 'SAE',
-  accentColor: 'blue',
+  accentColor: 'rgba(0, 224, 255, 1)',
+  accentColor_alt: 'rgba(0, 133, 255, 1)',
   landing: {
     landingText: {
       text1: 'SAE',

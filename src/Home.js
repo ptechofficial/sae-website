@@ -8,14 +8,13 @@ import Footer from './Components/Footer';
 
 import Teams from './Components/Teams';
 const Home = () => {
-  // console.log(DataHome);
   return (
     <>
       <Landing landing={DataHome.landing} teamName='sae' />
-      {/* <Teams /> */}
       <HomeAboutUs itemColor={'black'} teamData={DataHome} />
       <Footer
-        accentColor={DataHome.accentColor}
+        accentColor1={DataHome.accentColor}
+        accentColor2={DataHome.accentColor_alt}
         footerColors={DataHome.footerColors}
       />
       {/* <Link to='/accelerons'> Accelerons</Link>

@@ -18,13 +18,11 @@
   font-size: 2.5rem;
 }
 .comp-details .content-header p b {
-  /* color: red; */
   font-weight: 800;
 }
 .comp-details .content-body {
   grid-row: 3/10;
 
-  /* color: rgba(34, 34, 34, 1); */
   font-size: 1.1rem;
   line-height: 1.4;
   display: grid;
@@ -41,7 +39,6 @@
   grid-row: 1/2;
 }
 .comp-details .title-area {
-  /* background-color: antiquewhite; */
   grid-row: 3/10;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -91,7 +88,6 @@
 .comp-details .first-point {
   margin-top: 1rem;
   padding-left: 1rem;
-  /* border-left: 0.2rem solid red; */
 }
 .comp-details .first-img,
 .second-img {
@@ -124,7 +120,6 @@
 .comp-details .second-point {
   padding-right: 1rem;
   margin-top: 1rem;
-  /* border-right: 0.2rem solid red; */
 }
 .comp-details .empty-area {
   height: 100%;

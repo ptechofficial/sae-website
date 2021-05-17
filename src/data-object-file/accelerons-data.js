@@ -1,6 +1,7 @@
 const DataAccelerons = {
   name: 'Accelerons',
   accentColor: 'red',
+  accentColor_alt: 'red',
 
   textColor: 'black',
   landing: {

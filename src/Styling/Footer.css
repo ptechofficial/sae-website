@@ -2,7 +2,13 @@
   min-height: 40vh;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* border: 1px solid black; */
+  -webkit-gradient: (
+    linear,
+    left top,
+    right top,
+    from(rgba(0, 0, 0, 0.5)),
+    color-stop(50%, rgba(0, 0, 0, 0.2))
+  );
 }
 
 .footerArea * {
@@ -23,7 +29,7 @@
   font-weight: 600;
 }
 .foot-section .heading span {
-  border-bottom: 4px solid;
+  border-bottom: 4px solid transparent;
 }
 
 .foot-section .footer-links {
@@ -84,13 +90,14 @@
 
 .news-letter-inp input {
   height: 40px;
-
+  color: inherit;
   border: none;
   width: 40%;
   padding: 0 20px;
 }
 .news-letter-inp input:focus {
   outline: none;
+  color: inherit;
 }
 .news-letter-inp button {
   font-family: Montserrat;

@@ -1,6 +1,7 @@
 const DataTeam = {
   name: 'Nitrox',
   accentColor: '#3A86FF',
+  accentColor_alt: '#3A86FF',
 
   textColor: 'black',
   landing: {

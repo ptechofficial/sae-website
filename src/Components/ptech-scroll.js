@@ -5,7 +5,8 @@ import '../Styling/ptech-scroll.css';
 const PtechScroll = ({
   newTrans,
   bgColor,
-  accentColor,
+  accentColor1,
+  accentColor2,
   cntItems,
   itemColor,
 }) => {
@@ -52,7 +53,7 @@ const PtechScroll = ({
             className='progress-bar'
             id='myBar'
             style={{
-              backgroundColor: accentColor,
+              backgroundImage: `linear-gradient(to bottom, ${accentColor1}, ${accentColor2})`,
             }}
           >
             <p className='progress-num'>0{newTrans + 1}</p>

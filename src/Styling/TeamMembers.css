@@ -1,10 +1,7 @@
 * {
-  /* border: 1px solid white; */
 }
 .team-member {
   height: auto;
-  /* background-color: black; */
-  /* color: white; */
 }
 .team-member * {
   z-index: 1;
@@ -23,7 +20,6 @@
   font-size: 2.5rem;
 }
 .team-member .content-header p b {
-  /* color: red; */
   font-weight: 800;
 }
 .team-member .content-body {
@@ -34,7 +30,6 @@
   grid-template-rows: 1fr 10rem;
 }
 .team-member .content-body div {
-  /* border: 1px solid white; */
   display: grid;
   grid-template-rows: 4fr 0.8fr;
 }
@@ -59,7 +54,6 @@
 .team-member .person-details {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  /* border: 1px solid white; */
 }
 .person-name {
   font-weight: 500;
