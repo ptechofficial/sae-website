@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# What is SAE NIT Kurukshetra?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SAE stands for the Society of Automotive Engineers. NIT Kurukshetra (my college) has two teams; Team Accelerons and Team Nitrox, both registered under SAE India.
 
-## Available Scripts
+## This code
 
-In the project directory, you can run:
+### Technologies Used : <br>
 
-### `npm start`
+<div align="center">
+ <img src=https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white alt=HTML5 style="margin-bottom: 5px;" />
+ <img src=https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white alt=CSS3 style="margin-bottom: 5px;" />
+ <img src=https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black alt=Javascript style="margin-bottom: 5px;" />
+ <img src=https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white alt=NPM style="margin-bottom: 5px;" />
+ <img src=https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB alt=React style="margin-bottom: 5px;" />
+ <img src=https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white alt=Jquery style="margin-bottom: 5px;" />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This website is currently under development and thus no direct link is available for the website. Though you can see the 'under-Dev' look of this website by following the steps given below.
 
-### `npm test`
+## Setting up this project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Fork this repository to your GitHub account using the fork icon on top-right corner.<br>
+2.  Clone this repository to your System. There are two ways to do that : <br>
+    i. Using Git Bash, run this command on git terminal `git clone git@github.com:ptechofficial/sae-website.git` <br>
+    ii. Or directly downloading the code from GitHub website.<br>
+3.  \*Note: You should have npm install in your machine <br>
+4.  At the location where those files were downlaoded, open Command Prompt or Terminal and run `npm i` . This will install all the required modules for the project.<br>
+5.  After the system is done downloading the modules, run command `npm start`, This will open the project in your browser.<br>
