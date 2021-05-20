@@ -46,14 +46,54 @@
   font-weight: 400;
   color: gray;
 }
+@media only screen and (max-width: 1000px) {
+  .person-profile {
+    margin: 1rem;
+    height: 220px;
+    width: 160px;
+    display: grid;
+    grid-template-rows: 180px auto auto;
+  }
+  .name-prof {
+    font-size: 0.75rem;
+  }
+  .desg-prof {
+    font-size: 0.5rem;
+  }
+  .title-profile {
+    font-size: 1rem;
+  }
+}
 @media only screen and (max-width: 700px) {
   .person-profile {
-    margin: 0.7rem;
-    height: 150px;
-    width: 100px;
+    margin: 0.8rem;
+    height: 180px;
+    width: 140px;
     display: grid;
-    grid-template-rows: 120px auto auto;
-    text-align: center;
+    grid-template-rows: 160px auto auto;
+  }
+  .name-prof {
+    font-size: 0.65rem;
+  }
+  .desg-prof {
+    font-size: 0.45rem;
+  }
+  .title-profile {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .testing {
+    height: 75vh;
+  }
+  .person-profile {
+    margin: 0.5rem;
+    height: 140px;
+    width: 90px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-rows: 110px auto auto;
   }
   .name-prof {
     font-size: 0.55rem;
@@ -65,30 +105,6 @@
   }
   .title-profile {
     font-size: 0.6rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .testing {
-    height: 50vh;
-  }
-  .person-profile {
-    margin: 0.5rem;
-    height: 120px;
-    width: 80px;
-    /* border: 1px solid black; */
-    display: grid;
-    grid-template-rows: 90px auto auto;
-    text-align: center;
-  }
-  .name-prof {
-    font-size: 0.35rem;
-    font-weight: 600;
-  }
-  .desg-prof {
-    font-size: 0.25rem;
-    font-weight: 400;
-  }
-  .title-profile {
-    font-size: 0.45rem;
+    margin: 0.5rem 0;
   }
 }

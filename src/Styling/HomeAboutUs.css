@@ -21,7 +21,10 @@
   padding: 0.5em;
 }
 .home-about-us .content .image-area {
-  background: lightgray;
+  background-image: url('https://github.com/ptechofficial/sae-website/blob/master/src/Assets/Home/IMG-20191001-WA0017.jpg?raw=true');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 1em;
   grid-row: 2/8;
 }

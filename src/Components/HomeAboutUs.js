@@ -31,7 +31,7 @@ const HomeAboutUs = ({ itemColor, teamData }) => {
           </div>
         </div>
         <div className='content'>
-          <div className='image-area'>Image here</div>
+          <div className='image-area'></div>
           <div className='content-body'>
             <div className='content-header'>
               <p>
