@@ -4,7 +4,7 @@
   /* color: cornflowerblue; */
 }
 .home-about-us * {
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
   z-index: 1;
   box-sizing: border-box;
 }
@@ -45,11 +45,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.home-about-us .content .content-data {
-  display: grid;
-  grid-template-rows: 3fr 1fr;
-}
 .home-about-us .content .comp-names ul {
+  margin-top: 1em;
   border-left: 4px solid transparent;
   border-image: linear-gradient(
     to bottom,
@@ -119,8 +116,16 @@
 
 /* Responsiveness */
 @media only screen and (max-width: 1100px) {
-  .home-about-us .card-counter {
-    font-size: 25px;
+  .home-about-us .content-header p {
+    font-size: 2rem;
+  }
+  .home-about-us .title-line .vertical-header {
+    font-size: 0.5rem;
+  }
+  .home-about-us .content {
+    grid-column: 2/7;
+    margin-right: 2rem;
+    font-size: 14.5px;
   }
   .home-about-us .right-side {
     display: none;
@@ -128,12 +133,34 @@
 }
 /* Tablets */
 @media only screen and (max-width: 700px) {
-  .home-about-us .card-counter {
-    font-size: 20px;
+  .home-about-us .content-header p {
+    font-size: 1.6rem;
+  }
+  .home-about-us .title-line .vertical-header {
+    font-size: 0.5rem;
+  }
+  .home-about-us .content {
+    grid-column: 2/7;
+    margin-right: 2rem;
+    font-size: 11.5px;
+  }
+  .home-about-us .right-side {
+    display: none;
   }
 }
 /* mobile */
 @media only screen and (max-width: 500px) {
+  .home-about-us .content {
+    margin-top: 3em;
+  }
+  .home-about-us .content .image-area {
+    grid-row: 1/4;
+    grid-column: 1/3;
+  }
+  .home-about-us .content .content-body {
+    grid-row: 4/8;
+    grid-column: 1/3;
+  }
   .home-about-us .content-header p {
     font-size: 27px;
   }
@@ -154,4 +181,15 @@
   }
 }
 @media only screen and (max-width: 350px) {
+  .home-about-us .content-header p {
+    font-size: 1.2rem;
+  }
+  .home-about-us .title-line .vertical-header {
+    font-size: 0.53rem;
+  }
+  .home-about-us .content {
+    grid-column: 2/7;
+    margin-right: 2rem;
+    font-size: 8.5px;
+  }
 }

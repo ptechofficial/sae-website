@@ -1,0 +1,94 @@
+.testing {
+  height: 100vh;
+  /* border: 1px solid black; */
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.prof-inch {
+  font-family: Montserrat;
+  /* font-size: 0.7rem; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 1rem;
+  z-index: 1;
+}
+.title-profile {
+  font-size: 1.2rem;
+  grid-column: 1/4;
+  text-align: center;
+  font-weight: 800;
+}
+.person-profile {
+  margin: 1rem 2.4rem;
+  height: 250px;
+  width: 180px;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-rows: 200px auto auto;
+  text-align: center;
+}
+.image-prof {
+  border-radius: 50%;
+  background-image: url('https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px 0 10px 0;
+}
+.name-prof {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.desg-prof {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: gray;
+}
+@media only screen and (max-width: 700px) {
+  .person-profile {
+    margin: 0.7rem;
+    height: 150px;
+    width: 100px;
+    display: grid;
+    grid-template-rows: 120px auto auto;
+    text-align: center;
+  }
+  .name-prof {
+    font-size: 0.55rem;
+    font-weight: 600;
+  }
+  .desg-prof {
+    font-size: 0.4rem;
+    font-weight: 400;
+  }
+  .title-profile {
+    font-size: 0.6rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .testing {
+    height: 50vh;
+  }
+  .person-profile {
+    margin: 0.5rem;
+    height: 120px;
+    width: 80px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-rows: 90px auto auto;
+    text-align: center;
+  }
+  .name-prof {
+    font-size: 0.35rem;
+    font-weight: 600;
+  }
+  .desg-prof {
+    font-size: 0.25rem;
+    font-weight: 400;
+  }
+  .title-profile {
+    font-size: 0.45rem;
+  }
+}
