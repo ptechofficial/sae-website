@@ -9,21 +9,18 @@ import HomeAboutUs from './Components/HomeAboutUs';
 import Leads from './Components/Leads';
 import Footer from './Components/Footer';
 
-import Teams from './Components/Teams';
 const Home = () => {
   return (
     <>
       <Overlay socialColor='black' />
       <Landing landing={DataHome.landing} teamName='sae' />
       <HomeAboutUs itemColor={'black'} teamData={DataHome} />
-      <Leads />
+      <Leads leadsData={DataHome.leads} />
       <Footer
         accentColor1={DataHome.accentColor}
         accentColor2={DataHome.accentColor_alt}
         footerColors={DataHome.footerColors}
       />
-      {/* <Link to='/accelerons'> Accelerons</Link>
-      <Link to='/nitrox'> Nitrox</Link> */}
     </>
   );
 };

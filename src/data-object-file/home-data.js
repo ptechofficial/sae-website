@@ -61,6 +61,54 @@ const DataHome = {
       second: 'ATVC',
     },
   },
+  leads: {
+    professors: [
+      {
+        id: 1,
+        name: 'Prakarsh',
+        designation: 'Leader',
+        image:
+          'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      },
+      {
+        id: 2,
+        name: 'Prakarsh',
+        designation: 'Not leader',
+        image:
+          'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      },
+      {
+        id: 3,
+        name: 'Prakarsh',
+        designation: 'psuedo Leader',
+        image:
+          'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      },
+    ],
+    teamLeads: [
+      {
+        id: 1,
+        name: 'Prakarsh',
+        designation: 'Leader1',
+        image:
+          'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      },
+      {
+        id: 2,
+        name: 'Prakarsh',
+        designation: 'Not leader2',
+        image:
+          'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      },
+      {
+        id: 3,
+        name: 'Prakarsh',
+        designation: 'psuedo Leader3',
+        image:
+          'https://www.saenitkurukshetra.com/2nd%20year/2nd%20year/Accelerons_PrakarshGupta.jpg',
+      },
+    ],
+  },
   footerColors: {
     bgColor: 'black',
     textColor: 'white',

@@ -7,11 +7,12 @@ const Overlay = ({ socialColor }) => {
       <div
         className='overlay-social'
         style={{
-          color: socialColor,
+          color: 'white',
         }}
       >
-        <span className='icons'>
-          <span>
+        <span className='navbar-area'>
+          <span className='logo'></span>
+          <span className='icons'>
             <i className='fab fa-facebook-square fa-2x'></i>
             <i className='fab fa-instagram fa-2x'></i>
           </span>
